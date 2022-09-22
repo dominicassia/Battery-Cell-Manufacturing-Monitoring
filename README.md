@@ -15,6 +15,7 @@ PSU CMPEN 482W - College of Engineering Capstone
 - https://www.tinkercad.com/things/0rxjOthgeeJ
 - https://datasheets.raspberrypi.com/picow/pico-w-datasheet.pdf
 - https://www.digikey.com/en/maker/projects/raspberry-pi-pico-rp2040-i2c-example-with-micropython-and-cc/47d0c922b79342779cdbd4b37b7eb7e2
+- https://www.tomshardware.com/how-to/send-and-receive-data-raspberry-pi-pico-w-mqtt
 
 ### Python Virtual Environments
 - https://docs.python.org/3/tutorial/venv.html
