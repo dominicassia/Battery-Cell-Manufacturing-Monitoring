@@ -22,3 +22,7 @@ PSU CMPEN 482W - College of Engineering Capstone
 
 ### Websockets
 - https://websockets.readthedocs.io/en/stable/
+
+### User Interface
+- https://www.tomshardware.com/how-to/build-raspberry-pi-pico-w-web-app
+- https://anvil.works/docs/overview/free-vs-paid#:~:text=It%20is%20free%20to%20use,branding%20banner%20from%20your%20apps
