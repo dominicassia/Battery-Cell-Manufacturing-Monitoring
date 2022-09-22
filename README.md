@@ -2,22 +2,28 @@
 PSU CMPEN 482W - College of Engineering Capstone
 
 ## Getting Started
-### Downloads
-- Python 3.10
-- GitHub Desktop
+[Markdown (.md) syntax](https://www.markdownguide.org/basic-syntax/)
+
+
 
 
 ## References
 ### Load Cell
-- https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7FFX29%7FA3%7Fpdf%7FEnglish%7FENG_DS_FX29_A3.pdf%7F20009605-07
+- [TE Load Cell Datasheet](https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7FFX29%7FA3%7Fpdf%7FEnglish%7FENG_DS_FX29_A3.pdf%7F20009605-07)
 
-### Raspberry Pi Pico W
-- https://www.tinkercad.com/things/0rxjOthgeeJ
-- https://datasheets.raspberrypi.com/picow/pico-w-datasheet.pdf
-- https://www.digikey.com/en/maker/projects/raspberry-pi-pico-rp2040-i2c-example-with-micropython-and-cc/47d0c922b79342779cdbd4b37b7eb7e2
+### Raspberry Pi
+- [RPi Pico W Datasheet](https://datasheets.raspberrypi.com/picow/pico-w-datasheet.pdf)
+- [RPi Pico W Getting Started Guide](https://projects.raspberrypi.org/en/projects/getting-started-with-the-pico/2)
+- [RPi Pico W TinkerCAD 3D Model](https://www.tinkercad.com/things/0rxjOthgeeJ)
+- [RPi Pico W I2C](https://www.digikey.com/en/maker/projects/raspberry-pi-pico-rp2040-i2c-example-with-micropython-and-cc/47d0c922b79342779cdbd4b37b7eb7e2)
 
-### Python Virtual Environments
-- https://docs.python.org/3/tutorial/venv.html
+### Python
+- [Virtual Environment](https://docs.python.org/3/tutorial/venv.html)
+- [Websockets Library](https://websockets.readthedocs.io/en/stable/)
 
-### Websockets
-- https://websockets.readthedocs.io/en/stable/
+### Rust
+- [Documentation](https://doc.rust-lang.org/book/)
+
+### Networking
+- [MQTT for RPi]()
+- [AdHoc Network Windows 10](https://superuser.com/questions/1658424/how-do-i-create-a-wireless-ad-hoc-network-in-windows-10)
