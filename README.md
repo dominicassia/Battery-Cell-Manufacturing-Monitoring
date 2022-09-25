@@ -25,6 +25,7 @@ PSU CMPEN 482W - College of Engineering Capstone
 - [Documentation](https://doc.rust-lang.org/book/)
 
 ### Networking
+- [Python MQTT library](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python)
 - [MQTT for RPi](https://www.tomshardware.com/how-to/send-and-receive-data-raspberry-pi-pico-w-mqtt)
 - [AdHoc Network Windows 10](https://superuser.com/questions/1658424/how-do-i-create-a-wireless-ad-hoc-network-in-windows-10)
 
