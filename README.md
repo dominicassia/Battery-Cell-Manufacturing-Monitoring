@@ -32,6 +32,7 @@ PSU CMPEN 482W - College of Engineering Capstone
 - [Mosquitto MQTT Broker GitHub](https://github.com/eclipse/mosquitto)
 
 ### User Interface
+- https://html.com/
 - https://www.tomshardware.com/how-to/build-raspberry-pi-pico-w-web-app
 - https://anvil.works/docs/overview/free-vs-paid#:~:text=It%20is%20free%20to%20use,branding%20banner%20from%20your%20apps
 - https://www.tomshardware.com/news/raspberry-pi-pico-w-garage-door-web-server
