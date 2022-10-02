@@ -33,9 +33,12 @@ PSU CMPEN 482W - College of Engineering Capstone
 
 ### User Interface
 - https://html.com/
-- https://www.tomshardware.com/how-to/build-raspberry-pi-pico-w-web-app
-- https://anvil.works/docs/overview/free-vs-paid#:~:text=It%20is%20free%20to%20use,branding%20banner%20from%20your%20apps
+- https://html.com/forms/
 - https://www.tomshardware.com/news/raspberry-pi-pico-w-garage-door-web-server
 - https://www.raspberrypi.com/news/how-to-run-a-webserver-on-raspberry-pi-pico-w/
 - https://datasheets.raspberrypi.com/picow/connecting-to-the-internet-with-pico-w.pdf
 - https://www.tomshardware.com/how-to/raspberry-pi-pico-w-web-server#:~:text=With%20the%20Raspberry%20Pi%20PIco,pages%20from%20a%20Pico%20W.
+
+### Irrelevant Research Links
+- https://www.tomshardware.com/how-to/build-raspberry-pi-pico-w-web-app
+- https://anvil.works/docs/overview/free-vs-paid#:~:text=It%20is%20free%20to%20use,branding%20banner%20from%20your%20apps
