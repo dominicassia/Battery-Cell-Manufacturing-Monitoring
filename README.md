@@ -35,8 +35,9 @@ PSU CMPEN 482W - College of Engineering Capstone
 - https://html.com/
 - https://html.com/forms/
 - https://www.tomshardware.com/news/raspberry-pi-pico-w-garage-door-web-server
+- [Garage Door Github](https://github.com/geerlingguy/pico-w-garage-door-sensor)
 - https://www.raspberrypi.com/news/how-to-run-a-webserver-on-raspberry-pi-pico-w/
-- https://datasheets.raspberrypi.com/picow/connecting-to-the-internet-with-pico-w.pdf
+- [Raspberry Pi Datasheet](https://datasheets.raspberrypi.com/picow/connecting-to-the-internet-with-pico-w.pdf)
 - https://www.tomshardware.com/how-to/raspberry-pi-pico-w-web-server#:~:text=With%20the%20Raspberry%20Pi%20PIco,pages%20from%20a%20Pico%20W.
 
 ### Irrelevant Research Links
