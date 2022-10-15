@@ -32,6 +32,12 @@ PSU CMPEN 482W - College of Engineering Capstone
 - [Mosquitto MQTT Broker GitHub](https://github.com/eclipse/mosquitto)
 
 ### User Interface
+- [What is MQTT + usage with Node-RED](https://randomnerdtutorials.com/what-is-mqtt-and-how-it-works/)
+- [nodered.org + MQTT](https://cookbook.nodered.org/#mqtt)
+
+### Irrelevant Research Links
+- https://www.tomshardware.com/how-to/build-raspberry-pi-pico-w-web-app
+- https://anvil.works/docs/overview/free-vs-paid#:~:text=It%20is%20free%20to%20use,branding%20banner%20from%20your%20apps
 - https://html.com/
 - https://html.com/forms/
 - https://www.tomshardware.com/news/raspberry-pi-pico-w-garage-door-web-server
@@ -39,7 +45,3 @@ PSU CMPEN 482W - College of Engineering Capstone
 - https://www.raspberrypi.com/news/how-to-run-a-webserver-on-raspberry-pi-pico-w/
 - [Raspberry Pi Datasheet](https://datasheets.raspberrypi.com/picow/connecting-to-the-internet-with-pico-w.pdf)
 - https://www.tomshardware.com/how-to/raspberry-pi-pico-w-web-server#:~:text=With%20the%20Raspberry%20Pi%20PIco,pages%20from%20a%20Pico%20W.
-
-### Irrelevant Research Links
-- https://www.tomshardware.com/how-to/build-raspberry-pi-pico-w-web-app
-- https://anvil.works/docs/overview/free-vs-paid#:~:text=It%20is%20free%20to%20use,branding%20banner%20from%20your%20apps
