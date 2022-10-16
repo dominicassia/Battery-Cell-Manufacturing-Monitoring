@@ -1,0 +1,567 @@
+[
+    {
+        "id": "7cbb94fd8cb59155",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7e9ab2558e20736a",
+        "type": "ui_tab",
+        "name": "Bucket Gauges",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e32ccefd26b77d31",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "Arial Black,Arial Black,Gadget,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "Arial Black,Arial Black,Gadget,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "blue",
+                "accents": "light-blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "CMPEN482W Capstone PRJ3C",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "c3d2cd9116fb1a7d",
+        "type": "ui_group",
+        "name": "Linear Gauges",
+        "tab": "7e9ab2558e20736a",
+        "order": 1,
+        "disp": true,
+        "width": 8,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "61de5090.0f5d9",
+        "type": "mqtt-broker",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "261707a8ed08ee50",
+        "type": "ui_group",
+        "name": "Inputs",
+        "tab": "7e9ab2558e20736a",
+        "order": 2,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0e49ed0ebae21895",
+        "type": "ui_tab",
+        "name": "Charts",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f46aa95325abc80b",
+        "type": "ui_group",
+        "name": "Tracking Charts",
+        "tab": "0e49ed0ebae21895",
+        "order": 1,
+        "disp": true,
+        "width": 24,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "58e38cd430e52de7",
+        "type": "ui_lineargauge",
+        "z": "7cbb94fd8cb59155",
+        "group": "c3d2cd9116fb1a7d",
+        "order": 1,
+        "width": 2,
+        "height": 5,
+        "name": "Bucket #1",
+        "colorLowArea": "#99ff99",
+        "colorMidArea": "#fdff99",
+        "colorHighArea": "#ff8080",
+        "unit": "%",
+        "x": 240,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "052a89b79b480485",
+        "type": "ui_text_input",
+        "z": "7cbb94fd8cb59155",
+        "name": "",
+        "label": "input1",
+        "tooltip": "",
+        "group": "261707a8ed08ee50",
+        "order": 1,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 70,
+        "y": 100,
+        "wires": [
+            [
+                "58e38cd430e52de7",
+                "e4ecd622cfe7f1b4"
+            ]
+        ]
+    },
+    {
+        "id": "e4ecd622cfe7f1b4",
+        "type": "ui_chart",
+        "z": "7cbb94fd8cb59155",
+        "name": "",
+        "group": "f46aa95325abc80b",
+        "order": 1,
+        "width": 6,
+        "height": 4,
+        "label": "chart1",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 230,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8024cb4.98c5238",
+        "type": "mqtt in",
+        "z": "7cbb94fd8cb59155",
+        "name": "",
+        "topic": "topic/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "61de5090.0f5d9",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 70,
+        "y": 40,
+        "wires": [
+            [
+                "15d727dd.33e808",
+                "58e38cd430e52de7",
+                "e4ecd622cfe7f1b4"
+            ]
+        ]
+    },
+    {
+        "id": "15d727dd.33e808",
+        "type": "debug",
+        "z": "7cbb94fd8cb59155",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 380,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "fb4b9553263b18c4",
+        "type": "ui_lineargauge",
+        "z": "7cbb94fd8cb59155",
+        "group": "c3d2cd9116fb1a7d",
+        "order": 2,
+        "width": 2,
+        "height": 5,
+        "name": "Bucket #2",
+        "colorLowArea": "#99ff99",
+        "colorMidArea": "#fdff99",
+        "colorHighArea": "#ff8080",
+        "unit": "%",
+        "x": 240,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "66cd472e32b20f1d",
+        "type": "ui_text_input",
+        "z": "7cbb94fd8cb59155",
+        "name": "",
+        "label": "input2",
+        "tooltip": "",
+        "group": "261707a8ed08ee50",
+        "order": 2,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 70,
+        "y": 180,
+        "wires": [
+            [
+                "fb4b9553263b18c4",
+                "d83f8cd893312fd6"
+            ]
+        ]
+    },
+    {
+        "id": "d83f8cd893312fd6",
+        "type": "ui_chart",
+        "z": "7cbb94fd8cb59155",
+        "name": "",
+        "group": "f46aa95325abc80b",
+        "order": 2,
+        "width": 6,
+        "height": 4,
+        "label": "chart2",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 230,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2c4069f893420c83",
+        "type": "ui_lineargauge",
+        "z": "7cbb94fd8cb59155",
+        "group": "c3d2cd9116fb1a7d",
+        "order": 3,
+        "width": 2,
+        "height": 5,
+        "name": "Bucket #3",
+        "colorLowArea": "#99ff99",
+        "colorMidArea": "#fdff99",
+        "colorHighArea": "#ff8080",
+        "unit": "%",
+        "x": 240,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "9804b4c2d80c9705",
+        "type": "ui_text_input",
+        "z": "7cbb94fd8cb59155",
+        "name": "",
+        "label": "input3",
+        "tooltip": "",
+        "group": "261707a8ed08ee50",
+        "order": 3,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 70,
+        "y": 260,
+        "wires": [
+            [
+                "2c4069f893420c83",
+                "ae78e0edc43b3ae7"
+            ]
+        ]
+    },
+    {
+        "id": "ae78e0edc43b3ae7",
+        "type": "ui_chart",
+        "z": "7cbb94fd8cb59155",
+        "name": "",
+        "group": "f46aa95325abc80b",
+        "order": 3,
+        "width": 6,
+        "height": 4,
+        "label": "chart3",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 230,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c7f34de46381e68e",
+        "type": "ui_lineargauge",
+        "z": "7cbb94fd8cb59155",
+        "group": "c3d2cd9116fb1a7d",
+        "order": 4,
+        "width": 2,
+        "height": 5,
+        "name": "Bucket #4",
+        "colorLowArea": "#99ff99",
+        "colorMidArea": "#fdff99",
+        "colorHighArea": "#ff8080",
+        "unit": "%",
+        "x": 240,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "afd3b12c25e7c9bd",
+        "type": "ui_text_input",
+        "z": "7cbb94fd8cb59155",
+        "name": "",
+        "label": "input4",
+        "tooltip": "",
+        "group": "261707a8ed08ee50",
+        "order": 4,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 70,
+        "y": 340,
+        "wires": [
+            [
+                "c7f34de46381e68e",
+                "65f8b4c261989e85"
+            ]
+        ]
+    },
+    {
+        "id": "65f8b4c261989e85",
+        "type": "ui_chart",
+        "z": "7cbb94fd8cb59155",
+        "name": "",
+        "group": "f46aa95325abc80b",
+        "order": 4,
+        "width": 6,
+        "height": 4,
+        "label": "chart4",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 230,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    }
+]
