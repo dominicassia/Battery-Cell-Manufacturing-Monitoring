@@ -34,6 +34,7 @@ PSU CMPEN 482W - College of Engineering Capstone
 ### User Interface
 - [What is MQTT + usage with Node-RED](https://randomnerdtutorials.com/what-is-mqtt-and-how-it-works/)
 - [nodered.org + MQTT](https://cookbook.nodered.org/#mqtt)
+- [Setting up MQTT Locally on PC Video](https://youtu.be/DH-VSAACtBk)
 
 ### Irrelevant Research Links
 - https://www.tomshardware.com/how-to/build-raspberry-pi-pico-w-web-app
