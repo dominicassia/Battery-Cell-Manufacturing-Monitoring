@@ -1,6 +1,6 @@
 [
     {
-        "id": "7cbb94fd8cb59155",
+        "id": "d9e46407d0cb2c2f",
         "type": "tab",
         "label": "Flow 1",
         "disabled": false,
@@ -8,78 +8,91 @@
         "env": []
     },
     {
-        "id": "1a9b875812ed30f2",
+        "id": "36706b8886e291b3",
         "type": "junction",
-        "z": "7cbb94fd8cb59155",
+        "z": "d9e46407d0cb2c2f",
         "x": 320,
         "y": 260,
         "wires": [
             [
-                "19d6b46719a02ed8"
+                "4fd03811daa37742"
             ]
         ]
     },
     {
-        "id": "d04b73479689101c",
+        "id": "d1f020da82588770",
         "type": "junction",
-        "z": "7cbb94fd8cb59155",
+        "z": "d9e46407d0cb2c2f",
         "x": 540,
         "y": 260,
         "wires": [
             [
-                "e4ecd622cfe7f1b4",
-                "58e38cd430e52de7"
+                "d2877c6cf6f506f6",
+                "1e4e726c1ab6e425"
             ]
         ]
     },
     {
-        "id": "d791b7ebd3512d4a",
+        "id": "8c04cf55fd4c5c1c",
         "type": "junction",
-        "z": "7cbb94fd8cb59155",
+        "z": "d9e46407d0cb2c2f",
         "x": 540,
         "y": 340,
         "wires": [
             [
-                "fb4b9553263b18c4",
-                "d83f8cd893312fd6"
+                "22e268655515ea8b",
+                "2530cdf955fc2712"
             ]
         ]
     },
     {
-        "id": "b1d7fed737ab7abc",
+        "id": "5d34bc80582085fb",
         "type": "junction",
-        "z": "7cbb94fd8cb59155",
+        "z": "d9e46407d0cb2c2f",
         "x": 540,
         "y": 420,
         "wires": [
             [
-                "2c4069f893420c83",
-                "ae78e0edc43b3ae7"
+                "28f142ac6225e7bc",
+                "5acaa6a0521b2a2f"
             ]
         ]
     },
     {
-        "id": "2fad171f1eeb4dd1",
+        "id": "ba0a3643cc7b6088",
         "type": "junction",
-        "z": "7cbb94fd8cb59155",
+        "z": "d9e46407d0cb2c2f",
         "x": 540,
         "y": 500,
         "wires": [
             [
-                "c7f34de46381e68e",
-                "65f8b4c261989e85"
+                "0c2907cbddbf67ca",
+                "ac84855f911593bd"
             ]
         ]
     },
     {
-        "id": "19d6b46719a02ed8",
+        "id": "4fd03811daa37742",
         "type": "junction",
-        "z": "7cbb94fd8cb59155",
-        "x": 500,
+        "z": "d9e46407d0cb2c2f",
+        "x": 440,
         "y": 220,
         "wires": [
             [
-                "d04b73479689101c"
+                "d1f020da82588770"
+            ]
+        ]
+    },
+    {
+        "id": "37db7a2828b0df22",
+        "type": "junction",
+        "z": "d9e46407d0cb2c2f",
+        "x": 540,
+        "y": 80,
+        "wires": [
+            [
+                "08ba9c1e944e273b",
+                "9bf18024de850d43"
             ]
         ]
     },
@@ -250,9 +263,9 @@
         "className": ""
     },
     {
-        "id": "58e38cd430e52de7",
+        "id": "1e4e726c1ab6e425",
         "type": "ui_lineargauge",
-        "z": "7cbb94fd8cb59155",
+        "z": "d9e46407d0cb2c2f",
         "group": "c3d2cd9116fb1a7d",
         "order": 1,
         "width": 2,
@@ -262,14 +275,14 @@
         "colorMidArea": "#fdff99",
         "colorHighArea": "#ff8080",
         "unit": "%",
-        "x": 620,
+        "x": 630,
         "y": 240,
         "wires": []
     },
     {
-        "id": "052a89b79b480485",
+        "id": "74e4a938153947c0",
         "type": "ui_text_input",
-        "z": "7cbb94fd8cb59155",
+        "z": "d9e46407d0cb2c2f",
         "name": "",
         "label": "input1",
         "tooltip": "",
@@ -288,14 +301,14 @@
         "y": 260,
         "wires": [
             [
-                "d04b73479689101c"
+                "d1f020da82588770"
             ]
         ]
     },
     {
-        "id": "e4ecd622cfe7f1b4",
+        "id": "d2877c6cf6f506f6",
         "type": "ui_chart",
-        "z": "7cbb94fd8cb59155",
+        "z": "d9e46407d0cb2c2f",
         "name": "",
         "group": "f46aa95325abc80b",
         "order": 1,
@@ -337,9 +350,9 @@
         ]
     },
     {
-        "id": "8024cb4.98c5238",
+        "id": "a4191eed71d0debf",
         "type": "mqtt in",
-        "z": "7cbb94fd8cb59155",
+        "z": "d9e46407d0cb2c2f",
         "name": "",
         "topic": "topic/#",
         "qos": "2",
@@ -352,15 +365,15 @@
         "y": 80,
         "wires": [
             [
-                "15d727dd.33e808",
-                "c527ffe0cf02b0c8"
+                "f5e06c108523f1df",
+                "05c3b8774d838c75"
             ]
         ]
     },
     {
-        "id": "15d727dd.33e808",
+        "id": "f5e06c108523f1df",
         "type": "debug",
-        "z": "7cbb94fd8cb59155",
+        "z": "d9e46407d0cb2c2f",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -375,9 +388,9 @@
         "wires": []
     },
     {
-        "id": "fb4b9553263b18c4",
+        "id": "22e268655515ea8b",
         "type": "ui_lineargauge",
-        "z": "7cbb94fd8cb59155",
+        "z": "d9e46407d0cb2c2f",
         "group": "c3d2cd9116fb1a7d",
         "order": 2,
         "width": 2,
@@ -387,14 +400,14 @@
         "colorMidArea": "#fdff99",
         "colorHighArea": "#ff8080",
         "unit": "%",
-        "x": 620,
+        "x": 630,
         "y": 320,
         "wires": []
     },
     {
-        "id": "66cd472e32b20f1d",
+        "id": "e5d6972594fba7bd",
         "type": "ui_text_input",
-        "z": "7cbb94fd8cb59155",
+        "z": "d9e46407d0cb2c2f",
         "name": "",
         "label": "input2",
         "tooltip": "",
@@ -413,14 +426,14 @@
         "y": 340,
         "wires": [
             [
-                "d791b7ebd3512d4a"
+                "8c04cf55fd4c5c1c"
             ]
         ]
     },
     {
-        "id": "d83f8cd893312fd6",
+        "id": "2530cdf955fc2712",
         "type": "ui_chart",
-        "z": "7cbb94fd8cb59155",
+        "z": "d9e46407d0cb2c2f",
         "name": "",
         "group": "f46aa95325abc80b",
         "order": 2,
@@ -462,9 +475,9 @@
         ]
     },
     {
-        "id": "2c4069f893420c83",
+        "id": "28f142ac6225e7bc",
         "type": "ui_lineargauge",
-        "z": "7cbb94fd8cb59155",
+        "z": "d9e46407d0cb2c2f",
         "group": "c3d2cd9116fb1a7d",
         "order": 3,
         "width": 2,
@@ -474,14 +487,14 @@
         "colorMidArea": "#fdff99",
         "colorHighArea": "#ff8080",
         "unit": "%",
-        "x": 620,
+        "x": 630,
         "y": 400,
         "wires": []
     },
     {
-        "id": "9804b4c2d80c9705",
+        "id": "510b2c75aeab5955",
         "type": "ui_text_input",
-        "z": "7cbb94fd8cb59155",
+        "z": "d9e46407d0cb2c2f",
         "name": "",
         "label": "input3",
         "tooltip": "",
@@ -500,14 +513,14 @@
         "y": 420,
         "wires": [
             [
-                "b1d7fed737ab7abc"
+                "5d34bc80582085fb"
             ]
         ]
     },
     {
-        "id": "ae78e0edc43b3ae7",
+        "id": "5acaa6a0521b2a2f",
         "type": "ui_chart",
-        "z": "7cbb94fd8cb59155",
+        "z": "d9e46407d0cb2c2f",
         "name": "",
         "group": "f46aa95325abc80b",
         "order": 3,
@@ -549,9 +562,9 @@
         ]
     },
     {
-        "id": "c7f34de46381e68e",
+        "id": "0c2907cbddbf67ca",
         "type": "ui_lineargauge",
-        "z": "7cbb94fd8cb59155",
+        "z": "d9e46407d0cb2c2f",
         "group": "c3d2cd9116fb1a7d",
         "order": 4,
         "width": 2,
@@ -561,14 +574,14 @@
         "colorMidArea": "#fdff99",
         "colorHighArea": "#ff8080",
         "unit": "%",
-        "x": 620,
+        "x": 630,
         "y": 480,
         "wires": []
     },
     {
-        "id": "afd3b12c25e7c9bd",
+        "id": "22f48b9129bba8ae",
         "type": "ui_text_input",
-        "z": "7cbb94fd8cb59155",
+        "z": "d9e46407d0cb2c2f",
         "name": "",
         "label": "input4",
         "tooltip": "",
@@ -587,14 +600,14 @@
         "y": 500,
         "wires": [
             [
-                "2fad171f1eeb4dd1"
+                "ba0a3643cc7b6088"
             ]
         ]
     },
     {
-        "id": "65f8b4c261989e85",
+        "id": "ac84855f911593bd",
         "type": "ui_chart",
-        "z": "7cbb94fd8cb59155",
+        "z": "d9e46407d0cb2c2f",
         "name": "",
         "group": "f46aa95325abc80b",
         "order": 4,
@@ -636,9 +649,9 @@
         ]
     },
     {
-        "id": "11bc06c004bf575a",
+        "id": "b0232707da98e367",
         "type": "ui_toast",
-        "z": "7cbb94fd8cb59155",
+        "z": "d9e46407d0cb2c2f",
         "position": "dialog",
         "displayTime": "3",
         "highlight": "",
@@ -657,9 +670,9 @@
         ]
     },
     {
-        "id": "c527ffe0cf02b0c8",
+        "id": "05c3b8774d838c75",
         "type": "switch",
-        "z": "7cbb94fd8cb59155",
+        "z": "d9e46407d0cb2c2f",
         "name": "Fullness Switch",
         "property": "payload",
         "propertyType": "msg",
@@ -680,18 +693,18 @@
         "y": 260,
         "wires": [
             [
-                "1a9b875812ed30f2"
+                "36706b8886e291b3"
             ],
             [
-                "1a9b875812ed30f2",
-                "2fd71cd3c5db8567"
+                "36706b8886e291b3",
+                "65e0dcb27a234531"
             ]
         ]
     },
     {
-        "id": "2fd71cd3c5db8567",
+        "id": "65e0dcb27a234531",
         "type": "change",
-        "z": "7cbb94fd8cb59155",
+        "z": "d9e46407d0cb2c2f",
         "name": "Almost Full Msg Change",
         "rules": [
             {
@@ -711,15 +724,15 @@
         "y": 160,
         "wires": [
             [
-                "11bc06c004bf575a",
-                "04a48ba84b6785a2"
+                "b0232707da98e367",
+                "37db7a2828b0df22"
             ]
         ]
     },
     {
-        "id": "04a48ba84b6785a2",
+        "id": "9bf18024de850d43",
         "type": "e-mail",
-        "z": "7cbb94fd8cb59155",
+        "z": "d9e46407d0cb2c2f",
         "server": "smtp.gmail.com",
         "port": "465",
         "secure": true,
@@ -728,6 +741,20 @@
         "dname": "",
         "x": 730,
         "y": 100,
+        "wires": []
+    },
+    {
+        "id": "08ba9c1e944e273b",
+        "type": "e-mail",
+        "z": "d9e46407d0cb2c2f",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "secure": true,
+        "tls": true,
+        "name": "2676299549@txt.att.net",
+        "dname": "",
+        "x": 670,
+        "y": 60,
         "wires": []
     }
 ]
