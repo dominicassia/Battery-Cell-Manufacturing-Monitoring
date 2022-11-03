@@ -1,6 +1,6 @@
 [
     {
-        "id": "d9e46407d0cb2c2f",
+        "id": "99167e1496bf063f",
         "type": "tab",
         "label": "Flow 1",
         "disabled": false,
@@ -8,91 +8,91 @@
         "env": []
     },
     {
-        "id": "36706b8886e291b3",
+        "id": "4a1e233bfbb6dd6c",
         "type": "junction",
-        "z": "d9e46407d0cb2c2f",
+        "z": "99167e1496bf063f",
         "x": 320,
         "y": 260,
         "wires": [
             [
-                "4fd03811daa37742"
+                "f31da75f50108204"
             ]
         ]
     },
     {
-        "id": "d1f020da82588770",
+        "id": "2f3ef1148a1fd7b7",
         "type": "junction",
-        "z": "d9e46407d0cb2c2f",
-        "x": 540,
+        "z": "99167e1496bf063f",
+        "x": 550,
+        "y": 300,
+        "wires": [
+            [
+                "941bfc3e17d7ec11",
+                "b4aa9c8f96b49f6c"
+            ]
+        ]
+    },
+    {
+        "id": "84325d0c572dbbcb",
+        "type": "junction",
+        "z": "99167e1496bf063f",
+        "x": 550,
+        "y": 380,
+        "wires": [
+            [
+                "8029dc32200e5915",
+                "7692467ec5078f2f"
+            ]
+        ]
+    },
+    {
+        "id": "8dbe2e592f17a131",
+        "type": "junction",
+        "z": "99167e1496bf063f",
+        "x": 550,
+        "y": 460,
+        "wires": [
+            [
+                "c1824422f081190e",
+                "ef7b740408952c97"
+            ]
+        ]
+    },
+    {
+        "id": "7fe72fcf15c20afe",
+        "type": "junction",
+        "z": "99167e1496bf063f",
+        "x": 550,
+        "y": 540,
+        "wires": [
+            [
+                "1a4a98c5a22b35c1",
+                "66e2244501c56b5e"
+            ]
+        ]
+    },
+    {
+        "id": "f31da75f50108204",
+        "type": "junction",
+        "z": "99167e1496bf063f",
+        "x": 500,
         "y": 260,
         "wires": [
             [
-                "d2877c6cf6f506f6",
-                "1e4e726c1ab6e425"
+                "2f3ef1148a1fd7b7"
             ]
         ]
     },
     {
-        "id": "8c04cf55fd4c5c1c",
+        "id": "992101be5063acf9",
         "type": "junction",
-        "z": "d9e46407d0cb2c2f",
-        "x": 540,
-        "y": 340,
+        "z": "99167e1496bf063f",
+        "x": 720,
+        "y": 240,
         "wires": [
             [
-                "22e268655515ea8b",
-                "2530cdf955fc2712"
-            ]
-        ]
-    },
-    {
-        "id": "5d34bc80582085fb",
-        "type": "junction",
-        "z": "d9e46407d0cb2c2f",
-        "x": 540,
-        "y": 420,
-        "wires": [
-            [
-                "28f142ac6225e7bc",
-                "5acaa6a0521b2a2f"
-            ]
-        ]
-    },
-    {
-        "id": "ba0a3643cc7b6088",
-        "type": "junction",
-        "z": "d9e46407d0cb2c2f",
-        "x": 540,
-        "y": 500,
-        "wires": [
-            [
-                "0c2907cbddbf67ca",
-                "ac84855f911593bd"
-            ]
-        ]
-    },
-    {
-        "id": "4fd03811daa37742",
-        "type": "junction",
-        "z": "d9e46407d0cb2c2f",
-        "x": 440,
-        "y": 220,
-        "wires": [
-            [
-                "d1f020da82588770"
-            ]
-        ]
-    },
-    {
-        "id": "37db7a2828b0df22",
-        "type": "junction",
-        "z": "d9e46407d0cb2c2f",
-        "x": 540,
-        "y": 80,
-        "wires": [
-            [
-                "08ba9c1e944e273b",
-                "9bf18024de850d43"
+                "31cf6df543da9ab2",
+                "256f5ec09befc63f"
             ]
         ]
     },
@@ -263,9 +263,36 @@
         "className": ""
     },
     {
-        "id": "1e4e726c1ab6e425",
+        "id": "b9d6e4daef4e4408",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "104.39.103.101",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "b4aa9c8f96b49f6c",
         "type": "ui_lineargauge",
-        "z": "d9e46407d0cb2c2f",
+        "z": "99167e1496bf063f",
         "group": "c3d2cd9116fb1a7d",
         "order": 1,
         "width": 2,
@@ -275,14 +302,14 @@
         "colorMidArea": "#fdff99",
         "colorHighArea": "#ff8080",
         "unit": "%",
-        "x": 630,
-        "y": 240,
+        "x": 640,
+        "y": 280,
         "wires": []
     },
     {
-        "id": "74e4a938153947c0",
+        "id": "93cf19fd75f018f0",
         "type": "ui_text_input",
-        "z": "d9e46407d0cb2c2f",
+        "z": "99167e1496bf063f",
         "name": "",
         "label": "input1",
         "tooltip": "",
@@ -297,18 +324,18 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "msg",
-        "x": 450,
-        "y": 260,
+        "x": 460,
+        "y": 300,
         "wires": [
             [
-                "d1f020da82588770"
+                "2f3ef1148a1fd7b7"
             ]
         ]
     },
     {
-        "id": "d2877c6cf6f506f6",
+        "id": "941bfc3e17d7ec11",
         "type": "ui_chart",
-        "z": "d9e46407d0cb2c2f",
+        "z": "99167e1496bf063f",
         "name": "",
         "group": "f46aa95325abc80b",
         "order": 1,
@@ -343,37 +370,37 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 610,
-        "y": 280,
+        "x": 620,
+        "y": 320,
         "wires": [
             []
         ]
     },
     {
-        "id": "a4191eed71d0debf",
+        "id": "16c642a5a4a2c4c8",
         "type": "mqtt in",
-        "z": "d9e46407d0cb2c2f",
+        "z": "99167e1496bf063f",
         "name": "",
-        "topic": "topic/#",
+        "topic": "topic/pub",
         "qos": "2",
         "datatype": "auto-detect",
-        "broker": "61de5090.0f5d9",
+        "broker": "b9d6e4daef4e4408",
         "nl": false,
         "rap": false,
         "inputs": 0,
-        "x": 90,
+        "x": 100,
         "y": 80,
         "wires": [
             [
-                "f5e06c108523f1df",
-                "05c3b8774d838c75"
+                "837fc147d647f1df",
+                "0b91639da18b6c6e"
             ]
         ]
     },
     {
-        "id": "f5e06c108523f1df",
+        "id": "837fc147d647f1df",
         "type": "debug",
-        "z": "d9e46407d0cb2c2f",
+        "z": "99167e1496bf063f",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -383,14 +410,14 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 300,
+        "x": 400,
         "y": 80,
         "wires": []
     },
     {
-        "id": "22e268655515ea8b",
+        "id": "8029dc32200e5915",
         "type": "ui_lineargauge",
-        "z": "d9e46407d0cb2c2f",
+        "z": "99167e1496bf063f",
         "group": "c3d2cd9116fb1a7d",
         "order": 2,
         "width": 2,
@@ -400,14 +427,14 @@
         "colorMidArea": "#fdff99",
         "colorHighArea": "#ff8080",
         "unit": "%",
-        "x": 630,
-        "y": 320,
+        "x": 640,
+        "y": 360,
         "wires": []
     },
     {
-        "id": "e5d6972594fba7bd",
+        "id": "79ccd72e72e2083b",
         "type": "ui_text_input",
-        "z": "d9e46407d0cb2c2f",
+        "z": "99167e1496bf063f",
         "name": "",
         "label": "input2",
         "tooltip": "",
@@ -422,18 +449,18 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "msg",
-        "x": 450,
-        "y": 340,
+        "x": 460,
+        "y": 380,
         "wires": [
             [
-                "8c04cf55fd4c5c1c"
+                "84325d0c572dbbcb"
             ]
         ]
     },
     {
-        "id": "2530cdf955fc2712",
+        "id": "7692467ec5078f2f",
         "type": "ui_chart",
-        "z": "d9e46407d0cb2c2f",
+        "z": "99167e1496bf063f",
         "name": "",
         "group": "f46aa95325abc80b",
         "order": 2,
@@ -468,16 +495,16 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 610,
-        "y": 360,
+        "x": 620,
+        "y": 400,
         "wires": [
             []
         ]
     },
     {
-        "id": "28f142ac6225e7bc",
+        "id": "c1824422f081190e",
         "type": "ui_lineargauge",
-        "z": "d9e46407d0cb2c2f",
+        "z": "99167e1496bf063f",
         "group": "c3d2cd9116fb1a7d",
         "order": 3,
         "width": 2,
@@ -487,14 +514,14 @@
         "colorMidArea": "#fdff99",
         "colorHighArea": "#ff8080",
         "unit": "%",
-        "x": 630,
-        "y": 400,
+        "x": 640,
+        "y": 440,
         "wires": []
     },
     {
-        "id": "510b2c75aeab5955",
+        "id": "f5590d1629f069e2",
         "type": "ui_text_input",
-        "z": "d9e46407d0cb2c2f",
+        "z": "99167e1496bf063f",
         "name": "",
         "label": "input3",
         "tooltip": "",
@@ -509,18 +536,18 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "msg",
-        "x": 450,
-        "y": 420,
+        "x": 460,
+        "y": 460,
         "wires": [
             [
-                "5d34bc80582085fb"
+                "8dbe2e592f17a131"
             ]
         ]
     },
     {
-        "id": "5acaa6a0521b2a2f",
+        "id": "ef7b740408952c97",
         "type": "ui_chart",
-        "z": "d9e46407d0cb2c2f",
+        "z": "99167e1496bf063f",
         "name": "",
         "group": "f46aa95325abc80b",
         "order": 3,
@@ -555,16 +582,16 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 610,
-        "y": 440,
+        "x": 620,
+        "y": 480,
         "wires": [
             []
         ]
     },
     {
-        "id": "0c2907cbddbf67ca",
+        "id": "1a4a98c5a22b35c1",
         "type": "ui_lineargauge",
-        "z": "d9e46407d0cb2c2f",
+        "z": "99167e1496bf063f",
         "group": "c3d2cd9116fb1a7d",
         "order": 4,
         "width": 2,
@@ -574,14 +601,14 @@
         "colorMidArea": "#fdff99",
         "colorHighArea": "#ff8080",
         "unit": "%",
-        "x": 630,
-        "y": 480,
+        "x": 640,
+        "y": 520,
         "wires": []
     },
     {
-        "id": "22f48b9129bba8ae",
+        "id": "b735cd827523dccd",
         "type": "ui_text_input",
-        "z": "d9e46407d0cb2c2f",
+        "z": "99167e1496bf063f",
         "name": "",
         "label": "input4",
         "tooltip": "",
@@ -596,18 +623,18 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "msg",
-        "x": 450,
-        "y": 500,
+        "x": 460,
+        "y": 540,
         "wires": [
             [
-                "ba0a3643cc7b6088"
+                "7fe72fcf15c20afe"
             ]
         ]
     },
     {
-        "id": "ac84855f911593bd",
+        "id": "66e2244501c56b5e",
         "type": "ui_chart",
-        "z": "d9e46407d0cb2c2f",
+        "z": "99167e1496bf063f",
         "name": "",
         "group": "f46aa95325abc80b",
         "order": 4,
@@ -642,16 +669,16 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 610,
-        "y": 520,
+        "x": 620,
+        "y": 560,
         "wires": [
             []
         ]
     },
     {
-        "id": "b0232707da98e367",
+        "id": "3d41f4286af8eeac",
         "type": "ui_toast",
-        "z": "d9e46407d0cb2c2f",
+        "z": "99167e1496bf063f",
         "position": "dialog",
         "displayTime": "3",
         "highlight": "",
@@ -663,16 +690,16 @@
         "className": "",
         "topic": "Bucket",
         "name": "",
-        "x": 630,
+        "x": 830,
         "y": 160,
         "wires": [
             []
         ]
     },
     {
-        "id": "05c3b8774d838c75",
+        "id": "0b91639da18b6c6e",
         "type": "switch",
-        "z": "d9e46407d0cb2c2f",
+        "z": "99167e1496bf063f",
         "name": "Fullness Switch",
         "property": "payload",
         "propertyType": "msg",
@@ -693,25 +720,25 @@
         "y": 260,
         "wires": [
             [
-                "36706b8886e291b3"
+                "4a1e233bfbb6dd6c"
             ],
             [
-                "36706b8886e291b3",
-                "65e0dcb27a234531"
+                "4a1e233bfbb6dd6c",
+                "7026d39ee744c235"
             ]
         ]
     },
     {
-        "id": "65e0dcb27a234531",
+        "id": "eb5896851879634c",
         "type": "change",
-        "z": "d9e46407d0cb2c2f",
+        "z": "99167e1496bf063f",
         "name": "Almost Full Msg Change",
         "rules": [
             {
                 "t": "set",
-                "p": "payload",
+                "p": "topic",
                 "pt": "msg",
-                "to": "Bucket Almost Full!",
+                "to": "Bucket Monitoring",
                 "tot": "str"
             }
         ],
@@ -720,41 +747,85 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 410,
+        "x": 610,
         "y": 160,
         "wires": [
             [
-                "b0232707da98e367",
-                "37db7a2828b0df22"
+                "3d41f4286af8eeac",
+                "992101be5063acf9"
             ]
         ]
     },
     {
-        "id": "9bf18024de850d43",
+        "id": "256f5ec09befc63f",
         "type": "e-mail",
-        "z": "d9e46407d0cb2c2f",
+        "z": "99167e1496bf063f",
         "server": "smtp.gmail.com",
         "port": "465",
         "secure": true,
         "tls": true,
         "name": "CMPEN482W.PRJ3C.FALL2022@gmail.com",
         "dname": "",
-        "x": 730,
-        "y": 100,
+        "x": 910,
+        "y": 260,
         "wires": []
     },
     {
-        "id": "08ba9c1e944e273b",
+        "id": "31cf6df543da9ab2",
         "type": "e-mail",
-        "z": "d9e46407d0cb2c2f",
+        "z": "99167e1496bf063f",
         "server": "smtp.gmail.com",
         "port": "465",
         "secure": true,
         "tls": true,
         "name": "2676299549@txt.att.net",
         "dname": "",
-        "x": 670,
-        "y": 60,
+        "x": 850,
+        "y": 220,
         "wires": []
+    },
+    {
+        "id": "6b8b87c01294c2ac",
+        "type": "function",
+        "z": "99167e1496bf063f",
+        "name": "function 1",
+        "func": "msg.payload = \"The bucket is almost full. The current level is \" + msg.payload + \"%\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 160,
+        "wires": [
+            [
+                "eb5896851879634c"
+            ]
+        ]
+    },
+    {
+        "id": "7026d39ee744c235",
+        "type": "delay",
+        "z": "99167e1496bf063f",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "10",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 260,
+        "y": 160,
+        "wires": [
+            [
+                "6b8b87c01294c2ac"
+            ]
+        ]
     }
 ]
