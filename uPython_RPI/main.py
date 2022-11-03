@@ -88,24 +88,20 @@ def load_cell():
 ####################################### 
 
 # Connect
-connect_wifi()
-connect_broker()
-
-# Test publish
-client.publish(topic_pub, topic_msg)
+#connect_wifi()
+#connect_broker()
 
 # Begin LED blink
 timer.init(freq=2.5, mode=Timer.PERIODIC, callback=blink) 
 
+# ADC1 / GP27
+load_cell = machine.ADC(27)
+
+# 3.3V = 66lbs
+conversion = (1 / 65535)
 while True:
-    for i in range(10):
-        data = b'{}'.format(i**2)
-        print('sending ', data, '...')
-        client.publish(topic_pub, data)
-        print('sent.')
-        time.sleep(2)
-
-
-#load_cell()
-
-
+    data = load_cell.read_u16() * conversion
+    print('Sending: ', data)
+    #client.publish(topic_pub, data)
+    print('sent.')
+    time.sleep(2)
