@@ -1,0 +1,5 @@
+MQTT Broker
+Open terminal
+Navigate to mosquitto folder
+Command "mosquitto -v -c test.conf"
+Command 'mosquitto_pub -h IPv4_address_from_ipconfig -t topic/pub -m "message" -r -i client -d'
