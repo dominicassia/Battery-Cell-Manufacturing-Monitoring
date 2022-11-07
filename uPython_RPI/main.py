@@ -13,11 +13,9 @@ PASS = 'password'
 
 #######################################
 
-#mqtt_server = '192.168.1.2' # Broker
-mqtt_server = '172.20.10.10' # Broker
+mqtt_server = '192.168.1.4' # Broker
 client_id = 'rpi_pico'
 topic_pub = b'prj3c_test' # Topic
-topic_msg = b'Begin sensor data transmission' # Message
 
 # Create MQTT client object
 client = MQTTClient(client_id, mqtt_server, keepalive=3600)
@@ -88,8 +86,8 @@ def load_cell():
 ####################################### 
 
 # Connect
-#connect_wifi()
-#connect_broker()
+connect_wifi()
+connect_broker()
 
 # Begin LED blink
 timer.init(freq=2.5, mode=Timer.PERIODIC, callback=blink) 
@@ -98,10 +96,17 @@ timer.init(freq=2.5, mode=Timer.PERIODIC, callback=blink)
 load_cell = machine.ADC(27)
 
 # 3.3V = 66lbs
-conversion = (1 / 65535)
+conversion = (100 / 65535)
 while True:
-    data = load_cell.read_u16() * conversion
-    print('Sending: ', data)
-    #client.publish(topic_pub, data)
+    raw_data = load_cell.read_u16()
+    
+    converted_data = raw_data * conversion
+    
+    data = bytes(str(converted_data), 'utf-8')
+    
+    print('Sending: ', data, raw_data)
+    
+    client.publish(topic_pub, data)
+    
     print('sent.')
     time.sleep(2)
