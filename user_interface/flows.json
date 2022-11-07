@@ -37,7 +37,7 @@
         "type": "junction",
         "z": "99167e1496bf063f",
         "x": 550,
-        "y": 380,
+        "y": 400,
         "wires": [
             [
                 "8029dc32200e5915",
@@ -50,7 +50,7 @@
         "type": "junction",
         "z": "99167e1496bf063f",
         "x": 550,
-        "y": 460,
+        "y": 480,
         "wires": [
             [
                 "c1824422f081190e",
@@ -63,7 +63,7 @@
         "type": "junction",
         "z": "99167e1496bf063f",
         "x": 550,
-        "y": 540,
+        "y": 560,
         "wires": [
             [
                 "1a4a98c5a22b35c1",
@@ -210,7 +210,7 @@
         "tab": "7e9ab2558e20736a",
         "order": 1,
         "disp": true,
-        "width": 8,
+        "width": 12,
         "collapse": false,
         "className": ""
     },
@@ -258,7 +258,7 @@
         "tab": "0e49ed0ebae21895",
         "order": 1,
         "disp": true,
-        "width": 24,
+        "width": "20",
         "collapse": false,
         "className": ""
     },
@@ -266,7 +266,7 @@
         "id": "b9d6e4daef4e4408",
         "type": "mqtt-broker",
         "name": "",
-        "broker": "104.39.103.101",
+        "broker": "192.168.1.4",
         "port": "1883",
         "clientid": "",
         "autoConnect": true,
@@ -290,12 +290,88 @@
         "sessionExpiry": ""
     },
     {
+        "id": "5705b53f.d3e0bc",
+        "type": "ui_group",
+        "name": "Linear Gauges",
+        "tab": "64fe41f2.fdbe3",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "64fe41f2.fdbe3",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard"
+    },
+    {
+        "id": "4420d261e175b3b0",
+        "type": "ui_spacer",
+        "z": "99167e1496bf063f",
+        "name": "spacer",
+        "group": "f46aa95325abc80b",
+        "order": 2,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "8b83f571408a285d",
+        "type": "ui_spacer",
+        "z": "99167e1496bf063f",
+        "name": "spacer",
+        "group": "f46aa95325abc80b",
+        "order": 3,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "dc7307ab56e89211",
+        "type": "ui_spacer",
+        "z": "99167e1496bf063f",
+        "name": "spacer",
+        "group": "f46aa95325abc80b",
+        "order": 5,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "c5d0fcfd61ee1408",
+        "type": "ui_spacer",
+        "z": "99167e1496bf063f",
+        "name": "spacer",
+        "group": "f46aa95325abc80b",
+        "order": 6,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "9a20fe4d189d2fee",
+        "type": "ui_spacer",
+        "z": "99167e1496bf063f",
+        "name": "spacer",
+        "group": "f46aa95325abc80b",
+        "order": 8,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "20c780d1e02b3954",
+        "type": "ui_spacer",
+        "z": "99167e1496bf063f",
+        "name": "spacer",
+        "group": "f46aa95325abc80b",
+        "order": 9,
+        "width": 20,
+        "height": 1
+    },
+    {
         "id": "b4aa9c8f96b49f6c",
         "type": "ui_lineargauge",
         "z": "99167e1496bf063f",
         "group": "c3d2cd9116fb1a7d",
         "order": 1,
-        "width": 2,
+        "width": 3,
         "height": 5,
         "name": "Bucket #1",
         "colorLowArea": "#99ff99",
@@ -320,7 +396,7 @@
         "passthru": true,
         "mode": "text",
         "delay": 300,
-        "topic": "topic",
+        "topic": "prj3c_test",
         "sendOnBlur": true,
         "className": "",
         "topicType": "msg",
@@ -339,8 +415,8 @@
         "name": "",
         "group": "f46aa95325abc80b",
         "order": 1,
-        "width": 6,
-        "height": 4,
+        "width": 0,
+        "height": 0,
         "label": "chart1",
         "chartType": "line",
         "legend": "false",
@@ -381,7 +457,7 @@
         "type": "mqtt in",
         "z": "99167e1496bf063f",
         "name": "",
-        "topic": "topic/pub",
+        "topic": "prj3c_test",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "b9d6e4daef4e4408",
@@ -420,7 +496,7 @@
         "z": "99167e1496bf063f",
         "group": "c3d2cd9116fb1a7d",
         "order": 2,
-        "width": 2,
+        "width": 3,
         "height": 5,
         "name": "Bucket #2",
         "colorLowArea": "#99ff99",
@@ -428,7 +504,7 @@
         "colorHighArea": "#ff8080",
         "unit": "%",
         "x": 640,
-        "y": 360,
+        "y": 380,
         "wires": []
     },
     {
@@ -449,11 +525,11 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "msg",
-        "x": 460,
-        "y": 380,
+        "x": 250,
+        "y": 400,
         "wires": [
             [
-                "84325d0c572dbbcb"
+                "e0a7677614a1fc0e"
             ]
         ]
     },
@@ -463,9 +539,9 @@
         "z": "99167e1496bf063f",
         "name": "",
         "group": "f46aa95325abc80b",
-        "order": 2,
-        "width": 6,
-        "height": 4,
+        "order": 4,
+        "width": 0,
+        "height": 0,
         "label": "chart2",
         "chartType": "line",
         "legend": "false",
@@ -496,7 +572,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 620,
-        "y": 400,
+        "y": 420,
         "wires": [
             []
         ]
@@ -507,7 +583,7 @@
         "z": "99167e1496bf063f",
         "group": "c3d2cd9116fb1a7d",
         "order": 3,
-        "width": 2,
+        "width": 3,
         "height": 5,
         "name": "Bucket #3",
         "colorLowArea": "#99ff99",
@@ -515,7 +591,7 @@
         "colorHighArea": "#ff8080",
         "unit": "%",
         "x": 640,
-        "y": 440,
+        "y": 460,
         "wires": []
     },
     {
@@ -537,7 +613,7 @@
         "className": "",
         "topicType": "msg",
         "x": 460,
-        "y": 460,
+        "y": 480,
         "wires": [
             [
                 "8dbe2e592f17a131"
@@ -550,9 +626,9 @@
         "z": "99167e1496bf063f",
         "name": "",
         "group": "f46aa95325abc80b",
-        "order": 3,
-        "width": 6,
-        "height": 4,
+        "order": 7,
+        "width": 0,
+        "height": 0,
         "label": "chart3",
         "chartType": "line",
         "legend": "false",
@@ -583,7 +659,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 620,
-        "y": 480,
+        "y": 500,
         "wires": [
             []
         ]
@@ -594,7 +670,7 @@
         "z": "99167e1496bf063f",
         "group": "c3d2cd9116fb1a7d",
         "order": 4,
-        "width": 2,
+        "width": 3,
         "height": 5,
         "name": "Bucket #4",
         "colorLowArea": "#99ff99",
@@ -602,7 +678,7 @@
         "colorHighArea": "#ff8080",
         "unit": "%",
         "x": 640,
-        "y": 520,
+        "y": 540,
         "wires": []
     },
     {
@@ -624,7 +700,7 @@
         "className": "",
         "topicType": "msg",
         "x": 460,
-        "y": 540,
+        "y": 560,
         "wires": [
             [
                 "7fe72fcf15c20afe"
@@ -637,9 +713,9 @@
         "z": "99167e1496bf063f",
         "name": "",
         "group": "f46aa95325abc80b",
-        "order": 4,
-        "width": 6,
-        "height": 4,
+        "order": 10,
+        "width": 0,
+        "height": 0,
         "label": "chart4",
         "chartType": "line",
         "legend": "false",
@@ -670,7 +746,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 620,
-        "y": 560,
+        "y": 580,
         "wires": [
             []
         ]
@@ -812,7 +888,7 @@
         "timeout": "5",
         "timeoutUnits": "seconds",
         "rate": "1",
-        "nbRateUnits": "10",
+        "nbRateUnits": "20",
         "rateUnits": "second",
         "randomFirst": "1",
         "randomLast": "5",
@@ -825,6 +901,47 @@
         "wires": [
             [
                 "6b8b87c01294c2ac"
+            ]
+        ]
+    },
+    {
+        "id": "e0a7677614a1fc0e",
+        "type": "change",
+        "z": "99167e1496bf063f",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "highlimit",
+                "pt": "msg",
+                "to": "80",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "lowlimit",
+                "pt": "msg",
+                "to": "20",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "setpoint",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 400,
+        "wires": [
+            [
+                "84325d0c572dbbcb"
             ]
         ]
     }
