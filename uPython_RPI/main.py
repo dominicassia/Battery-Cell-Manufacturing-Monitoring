@@ -3,7 +3,6 @@
 # Imports
 import network, time
 from machine import Pin, Timer
-#from hx711_gpio import hx711 # from file import object
 from mqtt import MQTTClient
 
 #######################################
@@ -22,22 +21,12 @@ client = MQTTClient(client_id, mqtt_server, keepalive=3600)
 
 #######################################
 
-# Mosquitto broker config file (mosquitto.conf)
-## Create lan listener on laptop
-### listener 1883 192.168.1.13
-## Allow no authentication
-### allow_anonymous true
-
-# Launch broker
-## mosquitto -v -c mosquitto.conf
-# Launch subscriber
-## mosquitto_sub -v -h '192.168.1.13' -t 'prj3c_test'
-
-#######################################
-
 # LED
 led = machine.Pin('WL_GPIO0', machine.Pin.OUT) # On-board LED
 timer = Timer()
+
+# Load Cell ADC
+load_cell = machine.ADC(27) # ADC1 / GP27
 
 #######################################
 
@@ -69,18 +58,19 @@ def connect_broker():
         print('failed to connect to the broker. reconnecting...')
         time.sleep(5)
         connect_broker()
-        
-def load_cell():
-    # Initialize / 
-    #factor = 1 / 1 # factor = read weight / known weight?
-    #hx711.set_scale(factor)
-    #hx711.tare()
-    while True:
-        value = hx711.read()
-        print(value)
-        time.sleep(5)
     
-
+def load_cell():
+    # 3.3V = 66lbs
+    conversion = (100 / 65535)
+    while True:
+        raw_data = load_cell.read_u16()
+        converted_data = raw_data * conversion
+        data = bytes(str(converted_data), 'utf-8')
+        print('Sending: ', data, ' (converted: ', converted_data, ', raw: ', raw_data, ')')
+        client.publish(topic_pub, data)
+        print('sent.')
+        time.sleep(2)
+    
 ####################################### 
 # Start
 ####################################### 
@@ -92,21 +82,5 @@ connect_broker()
 # Begin LED blink
 timer.init(freq=2.5, mode=Timer.PERIODIC, callback=blink) 
 
-# ADC1 / GP27
-load_cell = machine.ADC(27)
-
-# 3.3V = 66lbs
-conversion = (100 / 65535)
-while True:
-    raw_data = load_cell.read_u16()
-    
-    converted_data = raw_data * conversion
-    
-    data = bytes(str(converted_data), 'utf-8')
-    
-    print('Sending: ', data, raw_data)
-    
-    client.publish(topic_pub, data)
-    
-    print('sent.')
-    time.sleep(2)
+# Begin Load Cell Transmission
+load_cell()
