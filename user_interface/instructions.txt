@@ -3,3 +3,6 @@ Open terminal
 Navigate to mosquitto folder
 Command "mosquitto -v -c test.conf"
 Command 'mosquitto_pub -h IPv4_address_from_ipconfig -t topic/pub -m "message" -r -i client -d'
+
+save chart subflow
+https://www.hexamail.com/guides/node-red/persistcharts.htm#:~:text=Node%2Dred%20is%20a%20great,or%20restart%20of%20node%2Dred.
