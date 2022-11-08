@@ -37,7 +37,7 @@
         "type": "junction",
         "z": "99167e1496bf063f",
         "x": 550,
-        "y": 400,
+        "y": 520,
         "wires": [
             [
                 "8029dc32200e5915",
@@ -50,7 +50,7 @@
         "type": "junction",
         "z": "99167e1496bf063f",
         "x": 550,
-        "y": 480,
+        "y": 600,
         "wires": [
             [
                 "c1824422f081190e",
@@ -63,7 +63,7 @@
         "type": "junction",
         "z": "99167e1496bf063f",
         "x": 550,
-        "y": 560,
+        "y": 680,
         "wires": [
             [
                 "1a4a98c5a22b35c1",
@@ -311,7 +311,7 @@
         "z": "99167e1496bf063f",
         "name": "spacer",
         "group": "f46aa95325abc80b",
-        "order": 2,
+        "order": 3,
         "width": 20,
         "height": 1
     },
@@ -321,7 +321,7 @@
         "z": "99167e1496bf063f",
         "name": "spacer",
         "group": "f46aa95325abc80b",
-        "order": 3,
+        "order": 4,
         "width": 20,
         "height": 1
     },
@@ -331,7 +331,7 @@
         "z": "99167e1496bf063f",
         "name": "spacer",
         "group": "f46aa95325abc80b",
-        "order": 5,
+        "order": 6,
         "width": 20,
         "height": 1
     },
@@ -341,7 +341,7 @@
         "z": "99167e1496bf063f",
         "name": "spacer",
         "group": "f46aa95325abc80b",
-        "order": 6,
+        "order": 7,
         "width": 20,
         "height": 1
     },
@@ -351,7 +351,7 @@
         "z": "99167e1496bf063f",
         "name": "spacer",
         "group": "f46aa95325abc80b",
-        "order": 8,
+        "order": 9,
         "width": 20,
         "height": 1
     },
@@ -361,7 +361,7 @@
         "z": "99167e1496bf063f",
         "name": "spacer",
         "group": "f46aa95325abc80b",
-        "order": 9,
+        "order": 10,
         "width": 20,
         "height": 1
     },
@@ -422,7 +422,7 @@
         "legend": "false",
         "xformat": "HH:mm:ss",
         "interpolate": "linear",
-        "nodata": "",
+        "nodata": "Waiting for Data Points",
         "dot": false,
         "ymin": "",
         "ymax": "",
@@ -446,10 +446,12 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 620,
+        "x": 630,
         "y": 320,
         "wires": [
-            []
+            [
+                "ebf4d99c10aceabf"
+            ]
         ]
     },
     {
@@ -504,7 +506,7 @@
         "colorHighArea": "#ff8080",
         "unit": "%",
         "x": 640,
-        "y": 380,
+        "y": 500,
         "wires": []
     },
     {
@@ -526,7 +528,7 @@
         "className": "",
         "topicType": "msg",
         "x": 250,
-        "y": 400,
+        "y": 520,
         "wires": [
             [
                 "e0a7677614a1fc0e"
@@ -539,7 +541,7 @@
         "z": "99167e1496bf063f",
         "name": "",
         "group": "f46aa95325abc80b",
-        "order": 4,
+        "order": 5,
         "width": 0,
         "height": 0,
         "label": "chart2",
@@ -572,7 +574,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 620,
-        "y": 420,
+        "y": 540,
         "wires": [
             []
         ]
@@ -591,7 +593,7 @@
         "colorHighArea": "#ff8080",
         "unit": "%",
         "x": 640,
-        "y": 460,
+        "y": 580,
         "wires": []
     },
     {
@@ -613,7 +615,7 @@
         "className": "",
         "topicType": "msg",
         "x": 460,
-        "y": 480,
+        "y": 600,
         "wires": [
             [
                 "8dbe2e592f17a131"
@@ -626,7 +628,7 @@
         "z": "99167e1496bf063f",
         "name": "",
         "group": "f46aa95325abc80b",
-        "order": 7,
+        "order": 8,
         "width": 0,
         "height": 0,
         "label": "chart3",
@@ -659,7 +661,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 620,
-        "y": 500,
+        "y": 620,
         "wires": [
             []
         ]
@@ -678,7 +680,7 @@
         "colorHighArea": "#ff8080",
         "unit": "%",
         "x": 640,
-        "y": 540,
+        "y": 660,
         "wires": []
     },
     {
@@ -700,7 +702,7 @@
         "className": "",
         "topicType": "msg",
         "x": 460,
-        "y": 560,
+        "y": 680,
         "wires": [
             [
                 "7fe72fcf15c20afe"
@@ -713,7 +715,7 @@
         "z": "99167e1496bf063f",
         "name": "",
         "group": "f46aa95325abc80b",
-        "order": 10,
+        "order": 11,
         "width": 0,
         "height": 0,
         "label": "chart4",
@@ -746,7 +748,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 620,
-        "y": 580,
+        "y": 700,
         "wires": [
             []
         ]
@@ -938,10 +940,125 @@
         "to": "",
         "reg": false,
         "x": 420,
-        "y": 400,
+        "y": 520,
         "wires": [
             [
                 "84325d0c572dbbcb"
+            ]
+        ]
+    },
+    {
+        "id": "5a70076d9dd504bd",
+        "type": "file",
+        "z": "99167e1496bf063f",
+        "name": "",
+        "filename": "C:\\Users\\tsoda\\Desktop\\test.json",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "utf8",
+        "x": 960,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ebf4d99c10aceabf",
+        "type": "json",
+        "z": "99167e1496bf063f",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 750,
+        "y": 320,
+        "wires": [
+            [
+                "5a70076d9dd504bd"
+            ]
+        ]
+    },
+    {
+        "id": "d03c7d09a993c56f",
+        "type": "file in",
+        "z": "99167e1496bf063f",
+        "name": "",
+        "filename": "C:\\Users\\tsoda\\Desktop\\test.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "utf8",
+        "allProps": false,
+        "x": 440,
+        "y": 380,
+        "wires": [
+            [
+                "38694569d2139b67"
+            ]
+        ]
+    },
+    {
+        "id": "38694569d2139b67",
+        "type": "json",
+        "z": "99167e1496bf063f",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 650,
+        "y": 380,
+        "wires": [
+            [
+                "941bfc3e17d7ec11",
+                "b465965b288b608c"
+            ]
+        ]
+    },
+    {
+        "id": "b465965b288b608c",
+        "type": "debug",
+        "z": "99167e1496bf063f",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "1a21c1e0e42e7cc4",
+        "type": "ui_button",
+        "z": "99167e1496bf063f",
+        "name": "",
+        "group": "f46aa95325abc80b",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Load Saved Data",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "refresh",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 170,
+        "y": 380,
+        "wires": [
+            [
+                "d03c7d09a993c56f"
             ]
         ]
     }
