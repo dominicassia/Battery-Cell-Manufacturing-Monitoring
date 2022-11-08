@@ -6,3 +6,5 @@ Command 'mosquitto_pub -h IPv4_address_from_ipconfig -t topic/pub -m "message" -
 
 save chart subflow
 https://www.hexamail.com/guides/node-red/persistcharts.htm#:~:text=Node%2Dred%20is%20a%20great,or%20restart%20of%20node%2Dred.
+
+To access node red website on another device, use URL with IP address of where the node red server is hosted. So if it is hosted on a laptop, use the IP address of that laptop.
