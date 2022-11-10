@@ -59,7 +59,7 @@ def connect_broker():
         time.sleep(5)
         connect_broker()
     
-def load_cell():
+def transmit_data():
     # 3.3V = 66lbs
     conversion = (100 / 65535)
     while True:
@@ -83,4 +83,4 @@ connect_broker()
 timer.init(freq=2.5, mode=Timer.PERIODIC, callback=blink) 
 
 # Begin Load Cell Transmission
-load_cell()
+transmit_data()
