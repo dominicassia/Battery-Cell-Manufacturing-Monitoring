@@ -36,6 +36,7 @@ PSU CMPEN 482W - College of Engineering Capstone
 - [nodered.org + MQTT](https://cookbook.nodered.org/#mqtt)
 - [Setting up MQTT Locally on PC Video](https://youtu.be/DH-VSAACtBk)
 - [How to install MQTT on Raspberry Pi](https://randomnerdtutorials.com/how-to-install-mosquitto-broker-on-raspberry-pi/)
+- [Download a File Node red](https://flows.nodered.org/flow/db68bd4934cf46f39e6e453a348bc419)
 
 ### Irrelevant Research Links
 - https://www.tomshardware.com/how-to/build-raspberry-pi-pico-w-web-app
