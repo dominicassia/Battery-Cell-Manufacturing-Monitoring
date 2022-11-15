@@ -8,11 +8,33 @@
         "env": []
     },
     {
+        "id": "31f4212966281b9a",
+        "type": "subflow",
+        "name": "Email + SMS + Dialog Notify",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 120,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "992101be5063acf9"
+                    }
+                ]
+            }
+        ],
+        "out": [],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
         "id": "4a1e233bfbb6dd6c",
         "type": "junction",
         "z": "99167e1496bf063f",
         "x": 320,
-        "y": 260,
+        "y": 160,
         "wires": [
             [
                 "f31da75f50108204"
@@ -24,7 +46,7 @@
         "type": "junction",
         "z": "99167e1496bf063f",
         "x": 550,
-        "y": 300,
+        "y": 200,
         "wires": [
             [
                 "941bfc3e17d7ec11",
@@ -33,50 +55,11 @@
         ]
     },
     {
-        "id": "84325d0c572dbbcb",
-        "type": "junction",
-        "z": "99167e1496bf063f",
-        "x": 550,
-        "y": 520,
-        "wires": [
-            [
-                "8029dc32200e5915",
-                "7692467ec5078f2f"
-            ]
-        ]
-    },
-    {
-        "id": "8dbe2e592f17a131",
-        "type": "junction",
-        "z": "99167e1496bf063f",
-        "x": 550,
-        "y": 600,
-        "wires": [
-            [
-                "c1824422f081190e",
-                "ef7b740408952c97"
-            ]
-        ]
-    },
-    {
-        "id": "7fe72fcf15c20afe",
-        "type": "junction",
-        "z": "99167e1496bf063f",
-        "x": 550,
-        "y": 680,
-        "wires": [
-            [
-                "1a4a98c5a22b35c1",
-                "66e2244501c56b5e"
-            ]
-        ]
-    },
-    {
         "id": "f31da75f50108204",
         "type": "junction",
         "z": "99167e1496bf063f",
         "x": 500,
-        "y": 260,
+        "y": 160,
         "wires": [
             [
                 "2f3ef1148a1fd7b7"
@@ -86,20 +69,58 @@
     {
         "id": "992101be5063acf9",
         "type": "junction",
-        "z": "99167e1496bf063f",
-        "x": 720,
-        "y": 240,
+        "z": "31f4212966281b9a",
+        "x": 200,
+        "y": 120,
         "wires": [
             [
                 "31cf6df543da9ab2",
-                "256f5ec09befc63f"
+                "256f5ec09befc63f",
+                "3d41f4286af8eeac"
+            ]
+        ]
+    },
+    {
+        "id": "61d3d58b385ddeb4",
+        "type": "junction",
+        "z": "99167e1496bf063f",
+        "x": 320,
+        "y": 420,
+        "wires": [
+            [
+                "6eda66f0aec8b640"
+            ]
+        ]
+    },
+    {
+        "id": "8d35025daa32b21a",
+        "type": "junction",
+        "z": "99167e1496bf063f",
+        "x": 550,
+        "y": 460,
+        "wires": [
+            [
+                "974238a4556c8ebc",
+                "20bba3c79cd2f1eb"
+            ]
+        ]
+    },
+    {
+        "id": "6eda66f0aec8b640",
+        "type": "junction",
+        "z": "99167e1496bf063f",
+        "x": 500,
+        "y": 420,
+        "wires": [
+            [
+                "8d35025daa32b21a"
             ]
         ]
     },
     {
         "id": "7e9ab2558e20736a",
         "type": "ui_tab",
-        "name": "Bucket Gauges",
+        "name": "Battery Sediment Monitoring",
         "icon": "dashboard",
         "order": 1,
         "disabled": false,
@@ -128,7 +149,8 @@
                 "name": "Untitled Theme 1",
                 "default": "#4B7930",
                 "baseColor": "#4B7930",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
             },
             "themeState": {
                 "base-color": {
@@ -210,55 +232,7 @@
         "tab": "7e9ab2558e20736a",
         "order": 1,
         "disp": true,
-        "width": 12,
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "61de5090.0f5d9",
-        "type": "mqtt-broker",
-        "broker": "localhost",
-        "port": "1883",
-        "clientid": "",
-        "usetls": false,
-        "compatmode": true,
-        "keepalive": "60",
-        "cleansession": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthPayload": "",
-        "willTopic": "",
-        "willQos": "0",
-        "willPayload": ""
-    },
-    {
-        "id": "261707a8ed08ee50",
-        "type": "ui_group",
-        "name": "Inputs",
-        "tab": "7e9ab2558e20736a",
-        "order": 2,
-        "disp": true,
-        "width": 12,
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "0e49ed0ebae21895",
-        "type": "ui_tab",
-        "name": "Charts",
-        "icon": "dashboard",
-        "order": 2,
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "f46aa95325abc80b",
-        "type": "ui_group",
-        "name": "Tracking Charts",
-        "tab": "0e49ed0ebae21895",
-        "order": 1,
-        "disp": true,
-        "width": "20",
+        "width": 4,
         "collapse": false,
         "className": ""
     },
@@ -266,7 +240,7 @@
         "id": "b9d6e4daef4e4408",
         "type": "mqtt-broker",
         "name": "",
-        "broker": "192.168.1.4",
+        "broker": "192.168.1.7",
         "port": "1883",
         "clientid": "",
         "autoConnect": true,
@@ -290,134 +264,182 @@
         "sessionExpiry": ""
     },
     {
-        "id": "5705b53f.d3e0bc",
+        "id": "34085289081f37bd",
         "type": "ui_group",
-        "name": "Linear Gauges",
-        "tab": "64fe41f2.fdbe3",
-        "order": 1,
+        "name": "Tracking Charts",
+        "tab": "7e9ab2558e20736a",
+        "order": 2,
         "disp": true,
-        "width": "12",
-        "collapse": false
+        "width": 20,
+        "collapse": false,
+        "className": ""
     },
     {
-        "id": "64fe41f2.fdbe3",
-        "type": "ui_tab",
-        "name": "Home",
-        "icon": "dashboard"
-    },
-    {
-        "id": "4420d261e175b3b0",
+        "id": "b0b4c570d80315e5",
         "type": "ui_spacer",
         "z": "99167e1496bf063f",
         "name": "spacer",
-        "group": "f46aa95325abc80b",
-        "order": 3,
-        "width": 20,
+        "group": "c3d2cd9116fb1a7d",
+        "order": 1,
+        "width": 4,
         "height": 1
     },
     {
-        "id": "8b83f571408a285d",
+        "id": "45c7ecf67c4a0606",
         "type": "ui_spacer",
         "z": "99167e1496bf063f",
         "name": "spacer",
-        "group": "f46aa95325abc80b",
+        "group": "c3d2cd9116fb1a7d",
+        "order": 2,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "22c17564a3229a47",
+        "type": "ui_spacer",
+        "z": "99167e1496bf063f",
+        "name": "spacer",
+        "group": "c3d2cd9116fb1a7d",
         "order": 4,
-        "width": 20,
+        "width": 4,
         "height": 1
     },
     {
-        "id": "dc7307ab56e89211",
+        "id": "dfa67a92b64662e1",
         "type": "ui_spacer",
         "z": "99167e1496bf063f",
         "name": "spacer",
-        "group": "f46aa95325abc80b",
+        "group": "c3d2cd9116fb1a7d",
+        "order": 5,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "a6033c1011fb90e5",
+        "type": "ui_spacer",
+        "z": "99167e1496bf063f",
+        "name": "spacer",
+        "group": "c3d2cd9116fb1a7d",
         "order": 6,
-        "width": 20,
+        "width": 4,
         "height": 1
     },
     {
-        "id": "c5d0fcfd61ee1408",
+        "id": "e791effb548c9281",
         "type": "ui_spacer",
         "z": "99167e1496bf063f",
         "name": "spacer",
-        "group": "f46aa95325abc80b",
+        "group": "c3d2cd9116fb1a7d",
         "order": 7,
-        "width": 20,
+        "width": 4,
         "height": 1
     },
     {
-        "id": "9a20fe4d189d2fee",
+        "id": "77015a90de7d080b",
         "type": "ui_spacer",
         "z": "99167e1496bf063f",
         "name": "spacer",
-        "group": "f46aa95325abc80b",
+        "group": "c3d2cd9116fb1a7d",
+        "order": 8,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "40c4125e2b7cd149",
+        "type": "ui_spacer",
+        "z": "99167e1496bf063f",
+        "name": "spacer",
+        "group": "c3d2cd9116fb1a7d",
         "order": 9,
-        "width": 20,
+        "width": 4,
         "height": 1
     },
     {
-        "id": "20c780d1e02b3954",
+        "id": "acc915c49792d69f",
         "type": "ui_spacer",
         "z": "99167e1496bf063f",
         "name": "spacer",
-        "group": "f46aa95325abc80b",
+        "group": "c3d2cd9116fb1a7d",
         "order": 10,
-        "width": 20,
+        "width": 4,
         "height": 1
+    },
+    {
+        "id": "3d41f4286af8eeac",
+        "type": "ui_toast",
+        "z": "31f4212966281b9a",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 310,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "256f5ec09befc63f",
+        "type": "e-mail",
+        "z": "31f4212966281b9a",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "secure": true,
+        "tls": true,
+        "name": "CMPEN482W.PRJ3C.FALL2022@gmail.com",
+        "dname": "",
+        "x": 410,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "31cf6df543da9ab2",
+        "type": "e-mail",
+        "z": "31f4212966281b9a",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "secure": true,
+        "tls": true,
+        "name": "2676299549@txt.att.net",
+        "dname": "",
+        "x": 350,
+        "y": 120,
+        "wires": []
     },
     {
         "id": "b4aa9c8f96b49f6c",
         "type": "ui_lineargauge",
         "z": "99167e1496bf063f",
         "group": "c3d2cd9116fb1a7d",
-        "order": 1,
-        "width": 3,
-        "height": 5,
+        "order": 3,
+        "width": 0,
+        "height": 0,
         "name": "Bucket #1",
         "colorLowArea": "#99ff99",
         "colorMidArea": "#fdff99",
         "colorHighArea": "#ff8080",
         "unit": "%",
         "x": 640,
-        "y": 280,
+        "y": 180,
         "wires": []
-    },
-    {
-        "id": "93cf19fd75f018f0",
-        "type": "ui_text_input",
-        "z": "99167e1496bf063f",
-        "name": "",
-        "label": "input1",
-        "tooltip": "",
-        "group": "261707a8ed08ee50",
-        "order": 1,
-        "width": 3,
-        "height": 1,
-        "passthru": true,
-        "mode": "text",
-        "delay": 300,
-        "topic": "prj3c_test",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "msg",
-        "x": 460,
-        "y": 300,
-        "wires": [
-            [
-                "2f3ef1148a1fd7b7"
-            ]
-        ]
     },
     {
         "id": "941bfc3e17d7ec11",
         "type": "ui_chart",
         "z": "99167e1496bf063f",
         "name": "",
-        "group": "f46aa95325abc80b",
+        "group": "34085289081f37bd",
         "order": 1,
         "width": 0,
         "height": 0,
-        "label": "chart1",
+        "label": "Chart #1",
         "chartType": "line",
         "legend": "false",
         "xformat": "HH:mm:ss",
@@ -426,7 +448,7 @@
         "dot": false,
         "ymin": "",
         "ymax": "",
-        "removeOlder": 1,
+        "removeOlder": "1",
         "removeOlderPoints": "",
         "removeOlderUnit": "3600",
         "cutout": 0,
@@ -446,32 +468,11 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 630,
-        "y": 320,
+        "x": 640,
+        "y": 220,
         "wires": [
             [
                 "ebf4d99c10aceabf"
-            ]
-        ]
-    },
-    {
-        "id": "16c642a5a4a2c4c8",
-        "type": "mqtt in",
-        "z": "99167e1496bf063f",
-        "name": "",
-        "topic": "prj3c_test",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "b9d6e4daef4e4408",
-        "nl": false,
-        "rap": false,
-        "inputs": 0,
-        "x": 100,
-        "y": 80,
-        "wires": [
-            [
-                "837fc147d647f1df",
-                "0b91639da18b6c6e"
             ]
         ]
     },
@@ -488,291 +489,9 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 400,
+        "x": 320,
         "y": 80,
         "wires": []
-    },
-    {
-        "id": "8029dc32200e5915",
-        "type": "ui_lineargauge",
-        "z": "99167e1496bf063f",
-        "group": "c3d2cd9116fb1a7d",
-        "order": 2,
-        "width": 3,
-        "height": 5,
-        "name": "Bucket #2",
-        "colorLowArea": "#99ff99",
-        "colorMidArea": "#fdff99",
-        "colorHighArea": "#ff8080",
-        "unit": "%",
-        "x": 640,
-        "y": 500,
-        "wires": []
-    },
-    {
-        "id": "79ccd72e72e2083b",
-        "type": "ui_text_input",
-        "z": "99167e1496bf063f",
-        "name": "",
-        "label": "input2",
-        "tooltip": "",
-        "group": "261707a8ed08ee50",
-        "order": 2,
-        "width": 3,
-        "height": 1,
-        "passthru": true,
-        "mode": "text",
-        "delay": 300,
-        "topic": "topic",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "msg",
-        "x": 250,
-        "y": 520,
-        "wires": [
-            [
-                "e0a7677614a1fc0e"
-            ]
-        ]
-    },
-    {
-        "id": "7692467ec5078f2f",
-        "type": "ui_chart",
-        "z": "99167e1496bf063f",
-        "name": "",
-        "group": "f46aa95325abc80b",
-        "order": 5,
-        "width": 0,
-        "height": 0,
-        "label": "chart2",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "",
-        "ymax": "",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 620,
-        "y": 540,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c1824422f081190e",
-        "type": "ui_lineargauge",
-        "z": "99167e1496bf063f",
-        "group": "c3d2cd9116fb1a7d",
-        "order": 3,
-        "width": 3,
-        "height": 5,
-        "name": "Bucket #3",
-        "colorLowArea": "#99ff99",
-        "colorMidArea": "#fdff99",
-        "colorHighArea": "#ff8080",
-        "unit": "%",
-        "x": 640,
-        "y": 580,
-        "wires": []
-    },
-    {
-        "id": "f5590d1629f069e2",
-        "type": "ui_text_input",
-        "z": "99167e1496bf063f",
-        "name": "",
-        "label": "input3",
-        "tooltip": "",
-        "group": "261707a8ed08ee50",
-        "order": 3,
-        "width": 3,
-        "height": 1,
-        "passthru": true,
-        "mode": "text",
-        "delay": 300,
-        "topic": "topic",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "msg",
-        "x": 460,
-        "y": 600,
-        "wires": [
-            [
-                "8dbe2e592f17a131"
-            ]
-        ]
-    },
-    {
-        "id": "ef7b740408952c97",
-        "type": "ui_chart",
-        "z": "99167e1496bf063f",
-        "name": "",
-        "group": "f46aa95325abc80b",
-        "order": 8,
-        "width": 0,
-        "height": 0,
-        "label": "chart3",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "",
-        "ymax": "",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 620,
-        "y": 620,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "1a4a98c5a22b35c1",
-        "type": "ui_lineargauge",
-        "z": "99167e1496bf063f",
-        "group": "c3d2cd9116fb1a7d",
-        "order": 4,
-        "width": 3,
-        "height": 5,
-        "name": "Bucket #4",
-        "colorLowArea": "#99ff99",
-        "colorMidArea": "#fdff99",
-        "colorHighArea": "#ff8080",
-        "unit": "%",
-        "x": 640,
-        "y": 660,
-        "wires": []
-    },
-    {
-        "id": "b735cd827523dccd",
-        "type": "ui_text_input",
-        "z": "99167e1496bf063f",
-        "name": "",
-        "label": "input4",
-        "tooltip": "",
-        "group": "261707a8ed08ee50",
-        "order": 4,
-        "width": 3,
-        "height": 1,
-        "passthru": true,
-        "mode": "text",
-        "delay": 300,
-        "topic": "topic",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "msg",
-        "x": 460,
-        "y": 680,
-        "wires": [
-            [
-                "7fe72fcf15c20afe"
-            ]
-        ]
-    },
-    {
-        "id": "66e2244501c56b5e",
-        "type": "ui_chart",
-        "z": "99167e1496bf063f",
-        "name": "",
-        "group": "f46aa95325abc80b",
-        "order": 11,
-        "width": 0,
-        "height": 0,
-        "label": "chart4",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "",
-        "ymax": "",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 620,
-        "y": 700,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3d41f4286af8eeac",
-        "type": "ui_toast",
-        "z": "99167e1496bf063f",
-        "position": "dialog",
-        "displayTime": "3",
-        "highlight": "",
-        "sendall": true,
-        "outputs": 1,
-        "ok": "OK",
-        "cancel": "",
-        "raw": false,
-        "className": "",
-        "topic": "Bucket",
-        "name": "",
-        "x": 830,
-        "y": 160,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "0b91639da18b6c6e",
@@ -795,7 +514,7 @@
         "repair": false,
         "outputs": 2,
         "x": 160,
-        "y": 260,
+        "y": 160,
         "wires": [
             [
                 "4a1e233bfbb6dd6c"
@@ -810,13 +529,15 @@
         "id": "eb5896851879634c",
         "type": "change",
         "z": "99167e1496bf063f",
-        "name": "Almost Full Msg Change",
+        "name": "",
         "rules": [
             {
-                "t": "set",
+                "t": "change",
                 "p": "topic",
                 "pt": "msg",
-                "to": "Bucket Monitoring",
+                "from": "prj3c_test_",
+                "fromt": "str",
+                "to": "Bucket #",
                 "tot": "str"
             }
         ],
@@ -825,59 +546,30 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 610,
-        "y": 160,
+        "x": 550,
+        "y": 120,
         "wires": [
             [
-                "3d41f4286af8eeac",
-                "992101be5063acf9"
+                "6b8b87c01294c2ac"
             ]
         ]
-    },
-    {
-        "id": "256f5ec09befc63f",
-        "type": "e-mail",
-        "z": "99167e1496bf063f",
-        "server": "smtp.gmail.com",
-        "port": "465",
-        "secure": true,
-        "tls": true,
-        "name": "CMPEN482W.PRJ3C.FALL2022@gmail.com",
-        "dname": "",
-        "x": 910,
-        "y": 260,
-        "wires": []
-    },
-    {
-        "id": "31cf6df543da9ab2",
-        "type": "e-mail",
-        "z": "99167e1496bf063f",
-        "server": "smtp.gmail.com",
-        "port": "465",
-        "secure": true,
-        "tls": true,
-        "name": "2676299549@txt.att.net",
-        "dname": "",
-        "x": 850,
-        "y": 220,
-        "wires": []
     },
     {
         "id": "6b8b87c01294c2ac",
         "type": "function",
         "z": "99167e1496bf063f",
-        "name": "function 1",
-        "func": "msg.payload = \"The bucket is almost full. The current level is \" + msg.payload + \"%\"\nreturn msg;",
+        "name": "set msg.payload",
+        "func": "msg.payload = msg.topic + \" is almost full. The current level is \" + msg.payload + \"%\"\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 420,
-        "y": 160,
+        "x": 740,
+        "y": 120,
         "wires": [
             [
-                "eb5896851879634c"
+                "5bac4db8aa8621eb"
             ]
         ]
     },
@@ -898,52 +590,11 @@
         "drop": true,
         "allowrate": false,
         "outputs": 1,
-        "x": 260,
-        "y": 160,
+        "x": 360,
+        "y": 120,
         "wires": [
             [
-                "6b8b87c01294c2ac"
-            ]
-        ]
-    },
-    {
-        "id": "e0a7677614a1fc0e",
-        "type": "change",
-        "z": "99167e1496bf063f",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "highlimit",
-                "pt": "msg",
-                "to": "80",
-                "tot": "num"
-            },
-            {
-                "t": "set",
-                "p": "lowlimit",
-                "pt": "msg",
-                "to": "20",
-                "tot": "num"
-            },
-            {
-                "t": "set",
-                "p": "setpoint",
-                "pt": "msg",
-                "to": "",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 420,
-        "y": 520,
-        "wires": [
-            [
-                "84325d0c572dbbcb"
+                "eb5896851879634c"
             ]
         ]
     },
@@ -955,11 +606,11 @@
         "filename": "C:\\Users\\tsoda\\Desktop\\test.json",
         "filenameType": "str",
         "appendNewline": true,
-        "createDir": false,
+        "createDir": true,
         "overwriteFile": "true",
         "encoding": "utf8",
-        "x": 960,
-        "y": 320,
+        "x": 980,
+        "y": 220,
         "wires": [
             []
         ]
@@ -972,8 +623,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 750,
-        "y": 320,
+        "x": 770,
+        "y": 220,
         "wires": [
             [
                 "5a70076d9dd504bd"
@@ -992,8 +643,8 @@
         "sendError": false,
         "encoding": "utf8",
         "allProps": false,
-        "x": 440,
-        "y": 380,
+        "x": 380,
+        "y": 260,
         "wires": [
             [
                 "38694569d2139b67"
@@ -1008,38 +659,20 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 650,
-        "y": 380,
+        "x": 610,
+        "y": 260,
         "wires": [
             [
-                "941bfc3e17d7ec11",
-                "b465965b288b608c"
+                "941bfc3e17d7ec11"
             ]
         ]
-    },
-    {
-        "id": "b465965b288b608c",
-        "type": "debug",
-        "z": "99167e1496bf063f",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 800,
-        "y": 380,
-        "wires": []
     },
     {
         "id": "1a21c1e0e42e7cc4",
         "type": "ui_button",
         "z": "99167e1496bf063f",
         "name": "",
-        "group": "f46aa95325abc80b",
+        "group": "34085289081f37bd",
         "order": 2,
         "width": 0,
         "height": 0,
@@ -1054,11 +687,411 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 170,
-        "y": 380,
+        "x": 110,
+        "y": 260,
         "wires": [
             [
                 "d03c7d09a993c56f"
+            ]
+        ]
+    },
+    {
+        "id": "d8021f38344ea509",
+        "type": "inject",
+        "z": "99167e1496bf063f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "5",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 150,
+        "y": 300,
+        "wires": [
+            [
+                "d03c7d09a993c56f"
+            ]
+        ]
+    },
+    {
+        "id": "5bac4db8aa8621eb",
+        "type": "subflow:31f4212966281b9a",
+        "z": "99167e1496bf063f",
+        "name": "",
+        "x": 960,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "20bba3c79cd2f1eb",
+        "type": "ui_lineargauge",
+        "z": "99167e1496bf063f",
+        "group": "c3d2cd9116fb1a7d",
+        "order": 11,
+        "width": 0,
+        "height": 0,
+        "name": "Bucket #2",
+        "colorLowArea": "#99ff99",
+        "colorMidArea": "#fdff99",
+        "colorHighArea": "#ff8080",
+        "unit": "%",
+        "x": 640,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "974238a4556c8ebc",
+        "type": "ui_chart",
+        "z": "99167e1496bf063f",
+        "name": "",
+        "group": "34085289081f37bd",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Chart #2",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Waiting for Data Points",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "1",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 640,
+        "y": 480,
+        "wires": [
+            [
+                "a6caab7e1cb9d420"
+            ]
+        ]
+    },
+    {
+        "id": "d8c5981beb443d8d",
+        "type": "mqtt in",
+        "z": "99167e1496bf063f",
+        "name": "",
+        "topic": "prj3c_test_2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "b9d6e4daef4e4408",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 110,
+        "y": 340,
+        "wires": [
+            [
+                "a58b7bb71e127fac",
+                "6a9983cf72b55ab8"
+            ]
+        ]
+    },
+    {
+        "id": "a58b7bb71e127fac",
+        "type": "debug",
+        "z": "99167e1496bf063f",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 320,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "6a9983cf72b55ab8",
+        "type": "switch",
+        "z": "99167e1496bf063f",
+        "name": "Fullness Switch",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lt",
+                "v": "80",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 160,
+        "y": 420,
+        "wires": [
+            [
+                "61d3d58b385ddeb4"
+            ],
+            [
+                "61d3d58b385ddeb4",
+                "dcbc6db0588d0f06"
+            ]
+        ]
+    },
+    {
+        "id": "77f57ea90b42ee13",
+        "type": "function",
+        "z": "99167e1496bf063f",
+        "name": "set msg.payload",
+        "func": "msg.payload = msg.topic + \" is almost full. The current level is \" + msg.payload + \"%\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 380,
+        "wires": [
+            [
+                "306b4d88f17be9a2"
+            ]
+        ]
+    },
+    {
+        "id": "dcbc6db0588d0f06",
+        "type": "delay",
+        "z": "99167e1496bf063f",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "20",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 360,
+        "y": 380,
+        "wires": [
+            [
+                "0cdd182e44d7eecc"
+            ]
+        ]
+    },
+    {
+        "id": "9c5fd9a33a87650e",
+        "type": "file",
+        "z": "99167e1496bf063f",
+        "name": "",
+        "filename": "C:\\Users\\tsoda\\Desktop\\test2.json",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "utf8",
+        "x": 980,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a6caab7e1cb9d420",
+        "type": "json",
+        "z": "99167e1496bf063f",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 770,
+        "y": 480,
+        "wires": [
+            [
+                "9c5fd9a33a87650e"
+            ]
+        ]
+    },
+    {
+        "id": "e4e02aedf917fa38",
+        "type": "file in",
+        "z": "99167e1496bf063f",
+        "name": "",
+        "filename": "C:\\Users\\tsoda\\Desktop\\test2.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "utf8",
+        "allProps": false,
+        "x": 380,
+        "y": 520,
+        "wires": [
+            [
+                "79b33b79e007af2a"
+            ]
+        ]
+    },
+    {
+        "id": "79b33b79e007af2a",
+        "type": "json",
+        "z": "99167e1496bf063f",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 610,
+        "y": 520,
+        "wires": [
+            [
+                "974238a4556c8ebc"
+            ]
+        ]
+    },
+    {
+        "id": "e9d66cbc94aea1c5",
+        "type": "ui_button",
+        "z": "99167e1496bf063f",
+        "name": "",
+        "group": "34085289081f37bd",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Load Saved Data",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "refresh",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 520,
+        "wires": [
+            [
+                "e4e02aedf917fa38"
+            ]
+        ]
+    },
+    {
+        "id": "81dad014400da6ee",
+        "type": "inject",
+        "z": "99167e1496bf063f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "5",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 150,
+        "y": 560,
+        "wires": [
+            [
+                "e4e02aedf917fa38"
+            ]
+        ]
+    },
+    {
+        "id": "306b4d88f17be9a2",
+        "type": "subflow:31f4212966281b9a",
+        "z": "99167e1496bf063f",
+        "name": "",
+        "x": 960,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "16c642a5a4a2c4c8",
+        "type": "mqtt in",
+        "z": "99167e1496bf063f",
+        "name": "",
+        "topic": "prj3c_test_1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "b9d6e4daef4e4408",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 110,
+        "y": 80,
+        "wires": [
+            [
+                "837fc147d647f1df",
+                "0b91639da18b6c6e"
+            ]
+        ]
+    },
+    {
+        "id": "0cdd182e44d7eecc",
+        "type": "change",
+        "z": "99167e1496bf063f",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "topic",
+                "pt": "msg",
+                "from": "prj3c_test_",
+                "fromt": "str",
+                "to": "Bucket #",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 550,
+        "y": 380,
+        "wires": [
+            [
+                "77f57ea90b42ee13"
             ]
         ]
     }
