@@ -240,7 +240,7 @@
         "id": "b9d6e4daef4e4408",
         "type": "mqtt-broker",
         "name": "",
-        "broker": "192.168.1.7",
+        "broker": "104.38.53.215",
         "port": "1883",
         "clientid": "",
         "autoConnect": true,
@@ -270,12 +270,12 @@
         "tab": "7e9ab2558e20736a",
         "order": 2,
         "disp": true,
-        "width": 20,
+        "width": 24,
         "collapse": false,
         "className": ""
     },
     {
-        "id": "b0b4c570d80315e5",
+        "id": "79406e6e1d3af09f",
         "type": "ui_spacer",
         "z": "99167e1496bf063f",
         "name": "spacer",
@@ -285,82 +285,12 @@
         "height": 1
     },
     {
-        "id": "45c7ecf67c4a0606",
+        "id": "a1cabf37d459bdb1",
         "type": "ui_spacer",
         "z": "99167e1496bf063f",
         "name": "spacer",
         "group": "c3d2cd9116fb1a7d",
-        "order": 2,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "22c17564a3229a47",
-        "type": "ui_spacer",
-        "z": "99167e1496bf063f",
-        "name": "spacer",
-        "group": "c3d2cd9116fb1a7d",
-        "order": 4,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "dfa67a92b64662e1",
-        "type": "ui_spacer",
-        "z": "99167e1496bf063f",
-        "name": "spacer",
-        "group": "c3d2cd9116fb1a7d",
-        "order": 5,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "a6033c1011fb90e5",
-        "type": "ui_spacer",
-        "z": "99167e1496bf063f",
-        "name": "spacer",
-        "group": "c3d2cd9116fb1a7d",
-        "order": 6,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "e791effb548c9281",
-        "type": "ui_spacer",
-        "z": "99167e1496bf063f",
-        "name": "spacer",
-        "group": "c3d2cd9116fb1a7d",
-        "order": 7,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "77015a90de7d080b",
-        "type": "ui_spacer",
-        "z": "99167e1496bf063f",
-        "name": "spacer",
-        "group": "c3d2cd9116fb1a7d",
-        "order": 8,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "40c4125e2b7cd149",
-        "type": "ui_spacer",
-        "z": "99167e1496bf063f",
-        "name": "spacer",
-        "group": "c3d2cd9116fb1a7d",
-        "order": 9,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "acc915c49792d69f",
-        "type": "ui_spacer",
-        "z": "99167e1496bf063f",
-        "name": "spacer",
-        "group": "c3d2cd9116fb1a7d",
-        "order": 10,
+        "order": 3,
         "width": 4,
         "height": 1
     },
@@ -407,10 +337,70 @@
         "port": "465",
         "secure": true,
         "tls": true,
-        "name": "2676299549@txt.att.net",
+        "name": "",
         "dname": "",
-        "x": 350,
+        "x": 290,
         "y": 120,
+        "wires": []
+    },
+    {
+        "id": "f3960e9dedafb0bf",
+        "type": "comment",
+        "z": "31f4212966281b9a",
+        "name": "For Text function, set \"To\" with something like 1234567890@txt.att.net",
+        "info": "",
+        "x": 610,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "b28750c838e060b4",
+        "type": "comment",
+        "z": "31f4212966281b9a",
+        "name": "Here's what we set:",
+        "info": "",
+        "x": 330,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "b059afa8e8833b7f",
+        "type": "comment",
+        "z": "31f4212966281b9a",
+        "name": "Server: smtp.gmail.com",
+        "info": "",
+        "x": 340,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "eb04f68dcfdf0107",
+        "type": "comment",
+        "z": "31f4212966281b9a",
+        "name": "Port: 465",
+        "info": "",
+        "x": 300,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "db04a88d3bf61ce4",
+        "type": "comment",
+        "z": "31f4212966281b9a",
+        "name": "Use your desired email account for UserID & Password",
+        "info": "",
+        "x": 440,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "3ad110f4fc101ba8",
+        "type": "comment",
+        "z": "31f4212966281b9a",
+        "name": "If using Gmail, password is Gmail's \"App Password\" (Google this))",
+        "info": "",
+        "x": 470,
+        "y": 360,
         "wires": []
     },
     {
@@ -418,15 +408,15 @@
         "type": "ui_lineargauge",
         "z": "99167e1496bf063f",
         "group": "c3d2cd9116fb1a7d",
-        "order": 3,
+        "order": 2,
         "width": 0,
         "height": 0,
-        "name": "Bucket #1",
+        "name": "Bucket Gauge",
         "colorLowArea": "#99ff99",
         "colorMidArea": "#fdff99",
         "colorHighArea": "#ff8080",
         "unit": "%",
-        "x": 640,
+        "x": 660,
         "y": 180,
         "wires": []
     },
@@ -437,12 +427,12 @@
         "name": "",
         "group": "34085289081f37bd",
         "order": 1,
-        "width": 0,
-        "height": 0,
-        "label": "Chart #1",
+        "width": 24,
+        "height": 6,
+        "label": "Bucket Chart",
         "chartType": "line",
         "legend": "false",
-        "xformat": "HH:mm:ss",
+        "xformat": "HH:mm",
         "interpolate": "linear",
         "nodata": "Waiting for Data Points",
         "dot": false,
@@ -450,7 +440,7 @@
         "ymax": "",
         "removeOlder": "1",
         "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
+        "removeOlderUnit": "604800",
         "cutout": 0,
         "useOneColor": false,
         "useUTC": false,
@@ -468,7 +458,7 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 640,
+        "x": 650,
         "y": 220,
         "wires": [
             [
@@ -582,8 +572,8 @@
         "timeout": "5",
         "timeoutUnits": "seconds",
         "rate": "1",
-        "nbRateUnits": "20",
-        "rateUnits": "second",
+        "nbRateUnits": "5",
+        "rateUnits": "minute",
         "randomFirst": "1",
         "randomLast": "5",
         "randomUnits": "seconds",
@@ -609,7 +599,7 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "utf8",
-        "x": 980,
+        "x": 1000,
         "y": 220,
         "wires": [
             []
@@ -623,7 +613,7 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 770,
+        "x": 790,
         "y": 220,
         "wires": [
             [
@@ -668,34 +658,6 @@
         ]
     },
     {
-        "id": "1a21c1e0e42e7cc4",
-        "type": "ui_button",
-        "z": "99167e1496bf063f",
-        "name": "",
-        "group": "34085289081f37bd",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Load Saved Data",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "refresh",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 110,
-        "y": 260,
-        "wires": [
-            [
-                "d03c7d09a993c56f"
-            ]
-        ]
-    },
-    {
         "id": "d8021f38344ea509",
         "type": "inject",
         "z": "99167e1496bf063f",
@@ -717,7 +679,7 @@
         "payload": "",
         "payloadType": "str",
         "x": 150,
-        "y": 300,
+        "y": 260,
         "wires": [
             [
                 "d03c7d09a993c56f"
@@ -738,15 +700,15 @@
         "type": "ui_lineargauge",
         "z": "99167e1496bf063f",
         "group": "c3d2cd9116fb1a7d",
-        "order": 11,
+        "order": 4,
         "width": 0,
         "height": 0,
-        "name": "Bucket #2",
+        "name": "Press Gauge",
         "colorLowArea": "#99ff99",
         "colorMidArea": "#fdff99",
         "colorHighArea": "#ff8080",
         "unit": "%",
-        "x": 640,
+        "x": 650,
         "y": 440,
         "wires": []
     },
@@ -756,13 +718,13 @@
         "z": "99167e1496bf063f",
         "name": "",
         "group": "34085289081f37bd",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "label": "Chart #2",
+        "order": 2,
+        "width": 24,
+        "height": 6,
+        "label": "Press Chart",
         "chartType": "line",
         "legend": "false",
-        "xformat": "HH:mm:ss",
+        "xformat": "HH:mm",
         "interpolate": "linear",
         "nodata": "Waiting for Data Points",
         "dot": false,
@@ -770,7 +732,7 @@
         "ymax": "",
         "removeOlder": "1",
         "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
+        "removeOlderUnit": "604800",
         "cutout": 0,
         "useOneColor": false,
         "useUTC": false,
@@ -788,7 +750,7 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 640,
+        "x": 650,
         "y": 480,
         "wires": [
             [
@@ -894,8 +856,8 @@
         "timeout": "5",
         "timeoutUnits": "seconds",
         "rate": "1",
-        "nbRateUnits": "20",
-        "rateUnits": "second",
+        "nbRateUnits": "5",
+        "rateUnits": "minute",
         "randomFirst": "1",
         "randomLast": "5",
         "randomUnits": "seconds",
@@ -921,7 +883,7 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "utf8",
-        "x": 980,
+        "x": 1000,
         "y": 480,
         "wires": [
             []
@@ -935,7 +897,7 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 770,
+        "x": 790,
         "y": 480,
         "wires": [
             [
@@ -980,34 +942,6 @@
         ]
     },
     {
-        "id": "e9d66cbc94aea1c5",
-        "type": "ui_button",
-        "z": "99167e1496bf063f",
-        "name": "",
-        "group": "34085289081f37bd",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Load Saved Data",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "refresh",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 110,
-        "y": 520,
-        "wires": [
-            [
-                "e4e02aedf917fa38"
-            ]
-        ]
-    },
-    {
         "id": "81dad014400da6ee",
         "type": "inject",
         "z": "99167e1496bf063f",
@@ -1029,7 +963,7 @@
         "payload": "",
         "payloadType": "str",
         "x": 150,
-        "y": 560,
+        "y": 520,
         "wires": [
             [
                 "e4e02aedf917fa38"
@@ -1094,5 +1028,45 @@
                 "77f57ea90b42ee13"
             ]
         ]
+    },
+    {
+        "id": "3dd4a734f3c06352",
+        "type": "comment",
+        "z": "99167e1496bf063f",
+        "name": "Update MQTT broker as needed",
+        "info": "",
+        "x": 170,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "935ac5a48e9f48f7",
+        "type": "comment",
+        "z": "99167e1496bf063f",
+        "name": "Update Save file path as needed",
+        "info": "",
+        "x": 370,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "ec424c994370c067",
+        "type": "comment",
+        "z": "99167e1496bf063f",
+        "name": "Update Save file path as needed",
+        "info": "",
+        "x": 990,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "edd0d5d3c65203c2",
+        "type": "comment",
+        "z": "99167e1496bf063f",
+        "name": "Above represents one bucket system, below is another bucket system. Duplicate flow for more buckets.",
+        "info": "",
+        "x": 390,
+        "y": 300,
+        "wires": []
     }
 ]
