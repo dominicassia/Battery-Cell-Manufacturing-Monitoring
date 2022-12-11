@@ -12,9 +12,9 @@ PASS = 'password'
 
 #######################################
 
-mqtt_server = '192.168.1.4' # Broker
-client_id = 'rpi_pico'
-topic_pub = b'prj3c_test' # Topic
+mqtt_server = '192.168.1.2' # Broker
+client_id = 'rpi_pico_2'
+topic_pub = b'prj3c_test_2' # Topic
 
 # Create MQTT client object
 client = MQTTClient(client_id, mqtt_server, keepalive=3600)
@@ -60,8 +60,7 @@ def connect_broker():
         connect_broker()
     
 def transmit_data():
-    # 3.3V = 66lbs
-    conversion = (100 / 65535)
+    conversion = 4 * (200 / 65535)
     while True:
         raw_data = load_cell.read_u16()
         converted_data = raw_data * conversion
